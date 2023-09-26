@@ -28,27 +28,28 @@ Frontier Exploration (FE) is a problem in autonomous robotics where an agent, eq
 
 ## Overview 
 
-Markup : 1. Frontier Exploration Basics
-          1. Defining Frontier Exploration
-          2. Key Components: Sensors and Mapping
+### Frontier Exploration Basics
+1. **Defining Frontier Exploration:**
+2. **Key Components: Sensors and Mapping:**
+
 
 ### Exploration Algorithms
-Coverage-Based Exploration
-Information-Gain Exploration
-Frontier-Based Exploration
+1. **Coverage-Based Exploration:**
+2. **Information-Gain Exploration:**
+3. **Frontier-Based Exploration:**
 
 ### Decision-Making in Frontier Exploration
-The Role of Decision-Making
-Balancing Exploration and Exploitation
-Risk Assessment in Exploration
+1. **The Role of Decision-Making:**
+2. **Balancing Exploration and Exploitation:**
+3. **Risk Assessment in Exploration:**
 
 ### Robotic Sensing and Perception
-Sensor Technologies in Frontier Exploration
-Perception Challenges in Unknown Environments
+1. **Sensor Technologies in Frontier Exploration:**
+2. **Perception Challenges in Unknown Environments:**
 
 ### Mapping and Localization
-Building Maps of the Explored Area
-Localization for Precise Navigation
+1. **Building Maps of the Explored Area:**
+2. **Localization for Precise Navigation:**
 
 ## Key Results
 
