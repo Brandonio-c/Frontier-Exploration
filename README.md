@@ -38,47 +38,48 @@ ADD SOME PICS/ VIDS HERE FOR FRONTIER EXPLORATION
 1. **Key Components: Sensors and Mapping:**
 Frontier exploration is fundamentally dependent on sensors. Sensors provide an agent/robotic system information about its environment. Common sensors utilised within the field include LiDAR, cameras, depth sensors, inertial measurement units (IMU), time of flight (TOF) and many more. In recent frontier exploration projects, agents are able to create and update maps of the region being explored in real-time by employing Simultaneous Localization and Mapping (SLAM) algorithms which often employ 3D occupancy grid maps and aid in efficient real-time navigation when employed in a human-machine teamed environment
 
-### Exploration Algorithms
+### Frontier Exploration Algorithms
 1. **Frontier-Based Exploration:**
 Algorithms for frontier exploration focus on the frontiers, finding and choosing those that offer the most exciting potential for discovery. When the agent travels to these frontiers, it gains new knowledge about its surroundings, including the location of obstacles and their features.
 
 ADD PICTURES AND EQUATIONS HERE
 
-3. **Coverage-Based Exploration:**
+2. **Coverage-Based Frontier Exploration:**
 These algorithms ensure that an agent thoroughly explores every region by giving priority to investigating new sections of the environment. Algorithms such as Spiral and grid-based patterns have been used to help achieve uniform coverage.
 
 
-4. **Information-Gain Exploration:**
+3. **Information-Gain Frontier Exploration:**
 These algorithms are designed to maximize the agent's ability to learn. They frequently follow metrics like entropy or mutual information, which quantify the uncertainty or information content of uncharted territory, to concentrate on places that promise the most interesting data.
 
 
 ### Decision-Making in Frontier Exploration
 1. **The Role of Decision-Making:**
-Decision-making in frontier exploration involves selecting the next best action or waypoint for the robot to explore. This process combines the robot's current knowledge, sensor data, and the exploration strategy to make informed choices.
+Decision-making in frontier exploration involves determining the agent's next optimal path of best action to arrive at a destination or waypoint. To make appropriate choices, this method integrates the agent's a-priori knowledge of the environment, sensor data, and exploratory policy.
 
 2. **Balancing Exploration and Exploitation:**
-Effective exploration strategies strike a balance between exploiting known information (exploitation) and exploring new areas (exploration). Robots need to decide when to gather more data and when to exploit the information they already possess.
+Exploration is the process of seeking new information, while exploitation is the utilization of existing knowledge or resources. Effective exploration strategies often seek to strike a balance between exploitation and exploration.
 
-3. **Risk Assessment in Exploration:**
-Risk assessment evaluates the potential hazards or challenges in unexplored areas. Robots must assess risks associated with frontiers, such as collision risk or environmental hazards, to make safe exploration decisions.
+ADD EXAMPLE HERE 
+
+4. **Risk Assessment in Exploration:**
+Risk assessment examines potential obstacles or risks in unexplored territories. To decide on safe exploration policies, agents must evaluate risks related to frontiers, such as collision danger or environmental concerns.
 
 
 ### Robotic Sensing and Perception
 1. **Sensor Technologies in Frontier Exploration:**
-Frontier exploration relies on various sensor technologies, including LiDAR for terrain mapping, cameras for visual data, and depth sensors for obstacle detection. These sensors provide essential data for mapping and navigation.
+Although modern-day sensor technologies are relatively precise, minor errors introduced due to environmental factors almost always introduce issues into agent navigation whereby agent localisation or pose estimation within the environment is cascadingly affected. The open research field of SLAM aims to solve this through algorithmic matching of environment features to correct agent pose and localisation errors. 
 
 2. **Perception Challenges in Unknown Environments:**
-Navigating unknown environments poses perception challenges. Robots must deal with dynamic changes, varying lighting conditions, and the presence of unexpected obstacles, necessitating robust perception algorithms and techniques.
+Navigating unknown environments poses perception various challenges. Agents must often deal with dynamic changes within the environment (e.g. people walking through a scene), varying lighting conditions, and the presence of unexpected obstacles, necessitating robust perception algorithms and techniques.
 
-
-### Mapping and Localization
+### Simultaneous Mapping and Localization (SLAM)
 1. **Building Maps of the Explored Area:**
-Mapping techniques like occupancy grids or voxel-based mapping are essential for constructing detailed representations of explored areas. These maps help the robot plan paths, avoid obstacles, and maintain spatial awareness.
+Mapping techniques like occupancy grids or voxel-based mapping are often used for constructing detailed representations of explored areas [EXAMPLES HERE]. Most modern projects aim to build 3D maps of the environment and these maps help the agent plan paths, avoid obstacles, and maintain spatial awareness. These maps are also crucial for use in the human-machine teamed environment as they allow human operators to interact with robotically sensed information in an efficient manner. 
 
 2. **Localization for Precise Navigation:**
-Precise localization is crucial for robots to navigate accurately within the mapped environment. Techniques like SLAM enable robots to simultaneously update their position and map as they explore, ensuring accurate navigation in real-time.
+Agents must be able to localize themselves accurately in order to navigate the mapped area effectively. Current state-of-the-art projects such as [ADD REFERENCE] achieve this by ""
 
-Frontier exploration continues to evolve, with ongoing advancements in sensor technology, decision-making algorithms, and mapping techniques. This multidisciplinary field is instrumental in enabling robots to explore and interact effectively with unknown and dynamic environments, with applications spanning from search and rescue missions to agricultural monitoring and beyond.
+ADD PICTURE HERE
 
 ## Key Results
 
