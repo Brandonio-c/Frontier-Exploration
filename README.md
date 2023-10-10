@@ -215,37 +215,37 @@ Can lessons learned from one domain of frontier exploration be applied to others
 
 For more in-depth information on frontier exploration and related topics, please refer to the following references:
 
-1. [Zhou, B., Zhang, Y., Chen, X. and Shen, S. (2020), 'FUEL: Fast UAV Exploration using Incremental Frontier Structure and Hierarchical Planning', arXiv.](#zhou2020)
+1. [Zhou, B., Zhang, Y., Chen, X. and Shen, S. (2020), 'FUEL: Fast UAV Exploration using Incremental Frontier Structure and Hierarchical Planning', arXiv. Available at: 10.48550/ARXIV.2010.11561 ](#zhou2020)
 
-2. [Schmid, L., Pantic, M., Khanna, R., Ott, L., Siegwart, R. and Nieto, J. (2020), 'An Efficient Sampling-Based Method for Online Informative Path Planning in Unknown Environments', IEEE Robotics and Automation Letters 5(2), 1500--1507.](#schmid2020)
+2. [Schmid, L., Pantic, M., Khanna, R., Ott, L., Siegwart, R. and Nieto, J. (2020), 'An Efficient Sampling-Based Method for Online Informative Path Planning in Unknown Environments', IEEE Robotics and Automation Letters 5(2), 1500--1507.Available at: 10.1109/lra.2020.2969191](#schmid2020)
 
-3. [Zhou, X., Zhu, J., Zhou, H., Xu, C. and Gao, F. (2021), EGO-Swarm: A Fully Autonomous and Decentralized Quadrotor Swarm System in Cluttered Environments, in '2021 IEEE International Conference on Robotics and Automation (ICRA)', IEEE](#zhou2020)
+3. [Zhou, X., Zhu, J., Zhou, H., Xu, C. and Gao, F. (2021), EGO-Swarm: A Fully Autonomous and Decentralized Quadrotor Swarm System in Cluttered Environments, in '2021 IEEE International Conference on Robotics and Automation (ICRA)', IEEE Available at: 10.1109/icra48506.2021.9561902](#zhou2020)
 
-4. [Leong, K. (2023), 'Reinforcement Learning with Frontier-Based Exploration via Autonomous Environment', arXiv.] (#leon2023)
+4. [Leong, K. (2023), 'Reinforcement Learning with Frontier-Based Exploration via Autonomous Environment', arXiv. Available at: 10.48550/ARXIV.2307.07296](#leon2023)
 
-5. [Jain, U., Tiwari, R. and Godfrey, W. W. (2017), Comparative study of frontier based exploration methods, in '2017 Conference on Information and Communication Technology (CICT)', IEEE, .](#jain2017)
+5. [Jain, U., Tiwari, R. and Godfrey, W. W. (2017), Comparative study of frontier based exploration methods, in '2017 Conference on Information and Communication Technology (CICT)', IEEE, Available at: 10.1109/infocomtech.2017.8340589](#jain2017)
 
-6. [Yamauchi, B. (1997), A frontier-based approach for autonomous exploration, in 'Proceedings 1997 IEEE International Symposium on Computational Intelligence in Robotics and Automation CIRA97. Towards New Computational Principles for Robotics and Automation', IEEE Comput. Soc. Press, .](#yama1997)
+6. [Yamauchi, B. (1997), A frontier-based approach for autonomous exploration, in 'Proceedings 1997 IEEE International Symposium on Computational Intelligence in Robotics and Automation CIRA97. Towards New Computational Principles for Robotics and Automation', IEEE Comput. Soc. Press, Available at: 10.1109/cira.1997.613851](#yama1997)
 
-7. [Yu, B., Kasaei, H. and Cao, M. (2023), Frontier Semantic Exploration for Visual Target Navigation, in '2023 IEEE International Conference on Robotics and Automation (ICRA)', IEEE, .](#yu2023)
+7. [Yu, B., Kasaei, H. and Cao, M. (2023), Frontier Semantic Exploration for Visual Target Navigation, in '2023 IEEE International Conference on Robotics and Automation (ICRA)', IEEE, Available at: 10.1109/icra48891.2023.10161059](#yu2023)
 
-8. [Zhao, Y., Yan, L., Xie, H., Dai, J. and Wei, P. (2023), 'Autonomous Exploration Method for Fast Unknown Environment Mapping by Using UAV Equipped with Limited FOV Sensor', IEEE Transactions on Industrial Electronics, 1--10.](#zhao2023)
+8. [Zhao, Y., Yan, L., Xie, H., Dai, J. and Wei, P. (2023), 'Autonomous Exploration Method for Fast Unknown Environment Mapping by Using UAV Equipped with Limited FOV Sensor', IEEE Transactions on Industrial Electronics, 1--10. Available at: 10.1109/tie.2023.3285921](#zhao2023)
 
-9. [Zhu, S., Sun, X., Sun, Z. and Yuan, J. (2023), RGB-D SLAM: Active RGB-D SLAM with Active Exploration, Adaptive TEB and Active Loop Closure, in '2023 42nd Chinese Control Conference (CCC)', IEEE, .](#zhu2023)
+9. [Zhu, S., Sun, X., Sun, Z. and Yuan, J. (2023), RGB-D SLAM: Active RGB-D SLAM with Active Exploration, Adaptive TEB and Active Loop Closure, in '2023 42nd Chinese Control Conference (CCC)', IEEE, Available at: 10.23919/ccc58697.2023.10240308](#zhu2023)
 
-10. [Lee, E. M., Youn, D. and Myung, H. (2023), THE-Planner: Topological and Hierarchical Exploration Path Planner for Fast 3D Mapping of Outdoor Structures with UAVs, in '2023 20th International Conference on Ubiquitous Robots (UR)', IEEE, .](#lee2023)
+10. [Lee, E. M., Youn, D. and Myung, H. (2023), THE-Planner: Topological and Hierarchical Exploration Path Planner for Fast 3D Mapping of Outdoor Structures with UAVs, in '2023 20th International Conference on Ubiquitous Robots (UR)', IEEE, Available at: 10.1109/ur57808.2023.10202255](#lee2023)
 
-11. [Saleh, I., Borhan, N., Yunus, A., Rahiman, W., Novaliendry, D. and Risfendra (2023), Simulation of Real-Time Frontier Exploration in Confined &amp$$ Cluttered Environment, in '2023 IEEE International Conference on Automatic Control and Intelligent Systems (I2CACIS)', IEEE, .](#saleh2023)
+11. [Saleh, I., Borhan, N., Yunus, A., Rahiman, W., Novaliendry, D. and Risfendra (2023), Simulation of Real-Time Frontier Exploration in Confined &amp$$ Cluttered Environment, in '2023 IEEE International Conference on Automatic Control and Intelligent Systems (I2CACIS)', IEEE, Available at: 10.1109/i2cacis57635.2023.10193051](#saleh2023)
 
-12. [Milas, A., Ivanovic, A. and Petrovic, T. (2023), 'ASEP: An Autonomous Semantic Exploration Planner With Object Labeling', IEEE Access 11, 107169--107183.](#milas2023)
+12. [Milas, A., Ivanovic, A. and Petrovic, T. (2023), 'ASEP: An Autonomous Semantic Exploration Planner With Object Labeling', IEEE Access 11, 107169--107183. Available at: 10.1109/access.2023.3320645](#milas2023)
 
-13. [Liu, Y.-F., Hsieh, C.-Y. and Kuo, S.-Y. (2023), Boomerang: Physical-Aware Design Space Exploration Framework on RISC-V SonicBOOM Microarchitecture, in '2023 IEEE 34th International Conference on Application-specific Systems, Architectures and Processors (ASAP)', IEEE, .](#liu2023)
+13. [Liu, Y.-F., Hsieh, C.-Y. and Kuo, S.-Y. (2023), Boomerang: Physical-Aware Design Space Exploration Framework on RISC-V SonicBOOM Microarchitecture, in '2023 IEEE 34th International Conference on Application-specific Systems, Architectures and Processors (ASAP)', IEEE, Available at: 10.1109/asap57973.2023.00026](#liu2023)
 
-14. [Chen, X., Zheng, J. and Hu, Q. (2023), 'A Hybrid Planning Method for 3D Autonomous Exploration in Unknown Environments With a UAV', IEEE Transactions on Automation Science and Engineering, 1--12.](#chen2023)
+14. [Chen, X., Zheng, J. and Hu, Q. (2023), 'A Hybrid Planning Method for 3D Autonomous Exploration in Unknown Environments With a UAV', IEEE Transactions on Automation Science and Engineering, 1--12. Available at: 10.1109/tase.2023.3316207](#chen2023)
 
-15. [Xiao, M., Bai, Y. and Liu, W. (2023), Hot Spots, Frontiers and Trends of International EDM/LA Research, in '2023 5th International Conference on Computer Science and Technologies in Education (CSTE)', IEEE, .](#xiao2023)
+15. [Xiao, M., Bai, Y. and Liu, W. (2023), Hot Spots, Frontiers and Trends of International EDM/LA Research, in '2023 5th International Conference on Computer Science and Technologies in Education (CSTE)', IEEE, Available at: 10.1109/cste59648.2023.00067](#xiao2023)
 
-16. [Hui, Y., Zhang, X., Shen, H., Lu, H. and Tian, B. (2023), 'DPPM: Decentralized Exploration Planning for Multi-UAV Systems Using Lightweight Information Structure', IEEE Transactions on Intelligent Vehicles, 1-13.](#hui2023)
+16. [Hui, Y., Zhang, X., Shen, H., Lu, H. and Tian, B. (2023), 'DPPM: Decentralized Exploration Planning for Multi-UAV Systems Using Lightweight Information Structure', IEEE Transactions on Intelligent Vehicles, 1-13. Available at: 10.1109/TIV.2023.3322705](#hui2023)
 
 
 
