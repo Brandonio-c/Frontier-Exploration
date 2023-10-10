@@ -18,36 +18,38 @@ Welcome to the GitHub Pages repository for the overview of frontier exploration 
 
 ## Summary
 
-Frontier exploration is driven by the need to send robots into environments that are hazardous, inaccessible, or simply uncharted by humans. These environments can range from space and deep-sea locations to disaster-stricken areas on Earth. The primary objectives of frontier exploration are to map the explored area, make informed decisions about where to explore next and adapt to dynamic and changing conditions.
+Frontier exploration is motivated by the desire to investigate areas that are dangerous, unreachable, or have not yet been visited by humans. These unexplored environments can be anything from deep-sea locales to regions of space to Earth's disaster-stricken areas. Mapping the investigated area, deciding where to explore next, and adapting to dynamic and changing conditions are among the primary open research areas of frontier exploration. In the following article, an agent refers to an autonomous robotic platform of some design (UGV, UAV etc)
 
 ## Formal Definition
 
-Frontier exploration is a fundamental area within the field of autonomous robotics, primarily applied to Unmanned Aerial Vehicles (UAVs) and mobile robots. It revolves around the task of autonomously navigating and mapping unknown environments to discover areas of interest or significance. The core concept of frontier exploration lies in the identification and systematic exploration of "frontiers," which are the unexplored boundaries between known and unknown spaces within the environment. These frontiers represent areas where the robot has incomplete or uncertain information about its surroundings and are typically associated with regions that could contain valuable information, obstacles, or points of interest. The primary goal of frontier exploration is to guide the robot efficiently through the environment, prioritizing frontiers for exploration to maximize information gain while adhering to constraints such as energy efficiency, collision avoidance, and computational resources.
+Frontier exploration is the identification and methodical investigation of "frontiers," or unexplored boundaries that separate the known and unknown regions within an environment. These frontiers represent areas where the agent has incomplete or uncertain information about its surroundings and are typically associated with regions that could contain valuable information, obstacles, or points of interest. Frontier exploration is centred on the challenge of independently exploring and mapping these unexplored frontiers in order to identify noteworthy or interesting locations. 
 
-Frontier exploration algorithms, such as ADD PAPER FROM REFERENCES, are designed to automate the process of identifying, planning paths to, and exploring these frontiers. They employ a combination of techniques, including sensor data analysis, path planning, and replanning strategies, to optimize the exploration process. 
+Algorithms for frontier exploration, like ADD PAPER FROM REFERENCES, are developed to automate the process of path planning and obstacle avoidance along routes to the frontiers.
 
-ADD SOME INFO HERE ABOUT ALGORITHMS (MAYBE A FORMAL ALGORITHM?) 
+ADD SOME INFO HERE ABOUT ALGORITHMS (MAYBE A FORMAL ALGORITHM?)
 
-Frontier exploration plays a pivotal role in various applications, including search and rescue missions, environmental monitoring, and mapping of indoor or outdoor environments, contributing to the advancement of autonomous robotics and enhancing the capabilities of UAVs and mobile robots in real-world scenarios.
+Frontier exploration is a fundamental area within the field of autonomous robotics, primarily applied to Unmanned Aerial Vehicles (UAVs) and mobile robots. Frontier exploration is essential for many applications, notably search and rescue operations, environmental monitoring, and mapping of indoor or outdoor environments.
+
+ADD SOME PICS/ VIDS HERE FOR FRONTIER EXPLORATION 
 
 ## Overview 
 
-### Frontier Exploration Basics
-1. **Defining Frontier Exploration:**
-Frontier exploration is the systematic process by which robots identify, navigate to, and map the boundaries of unknown regions within an environment. These boundaries, known as "frontiers," represent the interface between explored and unexplored areas, where the robot lacks complete information. The primary objective is to intelligently prioritize frontiers for exploration, considering various constraints, to maximize information gain while optimizing robot resources.
-
-2. **Key Components: Sensors and Mapping:**
-Sensors play a fundamental role in frontier exploration. These can include LiDAR, cameras, depth sensors, and more, providing the robot with data about its surroundings. Simultaneously, mapping techniques like occupancy grid maps, Octomap, or SLAM (Simultaneous Localization and Mapping) enable the robot to construct and update maps of the explored area, helping it navigate effectively in real-time.
+### Frontier Exploration Basic
+1. **Key Components: Sensors and Mapping:**
+Frontier exploration is fundamentally dependent on sensors. Sensors provide an agent/robotic system information about its environment. Common sensors utilised within the field include LiDAR, cameras, depth sensors, inertial measurement units (IMU), time of flight (TOF) and many more. In recent frontier exploration projects, agents are able to create and update maps of the region being explored in real-time by employing Simultaneous Localization and Mapping (SLAM) algorithms which often employ 3D occupancy grid maps and aid in efficient real-time navigation when employed in a human-machine teamed environment
 
 ### Exploration Algorithms
-1. **Coverage-Based Exploration:**
-These algorithms prioritize visiting unexplored regions of the environment, ensuring that the robot systematically covers all areas. Algorithms like grid-based or spiral patterns help achieve even coverage.
+1. **Frontier-Based Exploration:**
+Algorithms for frontier exploration focus on the frontiers, finding and choosing those that offer the most exciting potential for discovery. When the agent travels to these frontiers, it gains new knowledge about its surroundings, including the location of obstacles and their features.
 
-2. **Information-Gain Exploration:**
-These algorithms aim to maximize the robot's knowledge acquisition. They focus on regions that promise the most informative data, often guided by metrics like entropy or mutual information, which quantify the uncertainty or information content of unexplored areas.
+ADD PICTURES AND EQUATIONS HERE
 
-3. **Frontier-Based Exploration:**
-Frontier exploration algorithms target the frontiers, identifying and selecting frontiers that provide the most promising opportunities for exploration. The robot navigates to these frontiers, acquiring new information about the environment, such as obstacles, obstacles' characteristics, or points of interest.
+3. **Coverage-Based Exploration:**
+These algorithms ensure that an agent thoroughly explores every region by giving priority to investigating new sections of the environment. Algorithms such as Spiral and grid-based patterns have been used to help achieve uniform coverage.
+
+
+4. **Information-Gain Exploration:**
+These algorithms are designed to maximize the agent's ability to learn. They frequently follow metrics like entropy or mutual information, which quantify the uncertainty or information content of uncharted territory, to concentrate on places that promise the most interesting data.
 
 
 ### Decision-Making in Frontier Exploration
