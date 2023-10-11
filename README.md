@@ -88,11 +88,18 @@ Some modern frontier exploration algorithms [4] can adapt to dynamic changes and
 
 
 ### Scalability and Adaptability: 
-Multi-agent frontier exploration approaches [4], [2], [10] have showcased scalability for the use of unknown environmental mapping in a teamed/swarmed environment. Similar approaches shown in [11] and  also demonstrate robust and effective frontier exploration and mapping in  both small indoor (complex) environments and large-scale outdoor areas, making them versatile tools for a wide range of applications. 
+Multi-agent frontier exploration approaches [4], [2], [10] have showcased scalability for the use of unknown environmental mapping in a teamed/swarmed environment. Similar approaches are shown in [11] and also demonstrate robust and effective frontier exploration and mapping in  both small indoor (complex) environments and large-scale outdoor areas, making them versatile tools for a wide range of applications. 
 
 
 ## Relationship to Decision-Making in Robotics
-Frontier exploration in robotics is intimately tied to decision-making processes, frequently utilizing complex methods such as Markov Decision Processes (MDPs) to maximize robot actions in uncharted areas. Frontier exploration scenarios are particularly suited for MDPs because they offer a formal framework for modelling decision-making issues under uncertainty. The agent must autonomously decide an optimal policy on its exploration journey while accounting for a number of goals, such as information gathering and coverage. Every action, such as moving locations or gaining sensor information, has a corresponding benefit or cost, and the agent seeks to identify an action that maximizes its anticipated cumulative benefit over time.
+Decision-making in robotics refers to the process by which an autonomous agent makes choices and takes actions to achieve the agent's goals or objectives. It involves selecting the most appropriate actions or behaviours based on the agent's current perception of the environment, its internal state, and predefined objectives. A Markov Decision Process (MDP) is a discrete-time stochastic control process that provides a mathematical framework to model decision-making in robotics and is defined by a four-part tuple; (S, A, P, R) where: 
+
+S is the agent's state space
+A is the agent's action space
+P is the transition probability
+R is some reward funciton
+
+Frontier exploration is intimately tied to decision-making in robotics as it involves fully an agent constantly making autonomous choices and hence taking actions to achieve the goal of environment exploration wherein S is the environment (explored and unexplored), A is the agent's movement through and sensing of the environment, P is the transition probability given the environment and R is a provided function or policy that is used to influence the autonomous agent to explore frontiers. Frontier exploration uses MDPs to maximize the agent's actions in unexplored territories. Frontier exploration scenarios are particularly suited for MDPs because they offer a formal framework for modelling decision-making issues under uncertainty. The agent must autonomously decide an optimal policy on its exploration journey while accounting for a number of goals, such as information gathering and coverage. Every action, such as moving locations or gaining sensor information, has a corresponding benefit or cost, and the agent seeks to identify an action that maximizes its anticipated cumulative benefit over time.
 
 Reinforcement learning is a powerful tool employed in frontier exploration to take optimal actions in areas such as obstacle avoidance and path planning. For example, as observed in [ADD REFERENCE] an agent employs reinforcement learning algorithms to optimal paths to avoid obstacles within the environment whilst effectively exploring frontiers. These algorithms use a reward-based system wherein desirable actions, like successfully avoiding obstacles, are rewarded positively, while undesirable outcomes, like collisions, are penalized. Agents can modify their decision-making process and develop obstacle-avoidance policies by learning over time from these rewards. This allows agents to efficiently explore unexplored territories while navigating safely around obstacles within the terrain and making sensible choices to prevent collisions [ADD REFERENCE].
 
@@ -203,9 +210,9 @@ For more in-depth information on frontier exploration and related topics, please
 
 12. Yu, B., Kasaei, H. and Cao, M. (2023), Frontier Semantic Exploration for Visual Target Navigation, in '2023 IEEE International Conference on Robotics and Automation (ICRA)', IEEE, doi: 10.1109/icra48891.2023.10161059
 
-13. Zhao, Y., Yan, L., Xie, H., Dai, J. and Wei, P. (2023), 'Autonomous Exploration Method for Fast Unknown Environment Mapping by Using UAV Equipped with Limited FOV Sensor', IEEE Transactions on Industrial Electronics, 1--10. doi: 10.1109/tie.2023.3285921
+13.Lee, E. M., Youn, D. and Myung, H. (2023), THE-Planner: Topological and Hierarchical Exploration Path Planner for Fast 3D Mapping of Outdoor Structures with UAVs, in '2023 20th International Conference on Ubiquitous Robots (UR)', IEEE, doi: 10.1109/ur57808.2023.10202255 
 
-14. Lee, E. M., Youn, D. and Myung, H. (2023), THE-Planner: Topological and Hierarchical Exploration Path Planner for Fast 3D Mapping of Outdoor Structures with UAVs, in '2023 20th International Conference on Ubiquitous Robots (UR)', IEEE, doi: 10.1109/ur57808.2023.10202255
+14. Zhao, Y., Yan, L., Xie, H., Dai, J. and Wei, P. (2023), 'Autonomous Exploration Method for Fast Unknown Environment Mapping by Using UAV Equipped with Limited FOV Sensor', IEEE Transactions on Industrial Electronics, 1--10. doi: 10.1109/tie.2023.3285921
 
 15. D. C. Schedl et al. ,(2021), An autonomous drone for search and rescue in forests using airborne optical sectioning.Sci. Robot.6,eabg1188, doi: 10.1126/scirobotics.abg1188
 
