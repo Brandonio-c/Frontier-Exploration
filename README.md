@@ -32,10 +32,6 @@ ADD SOME PICS/ VIDS HERE FOR FRONTIER EXPLORATION
 
 ## Overview 
 
-### Frontier Exploration Basic
-1. **Key Components: Sensors and Mapping:**
-Frontier exploration is fundamentally dependent on sensors. Sensors provide an agent/robotic system information about its environment. Common sensors utilised within the field include LiDAR, cameras, depth sensors, inertial measurement units (IMU), time of flight (TOF) and many more. In recent frontier exploration projects, agents are able to create and update maps of the region being explored in real-time by employing Simultaneous Localization and Mapping (SLAM) algorithms which often employ 3D occupancy grid maps and aid in efficient real-time navigation when employed in a human-machine teamed environment
-
 ### Frontier Exploration Algorithms
 1. **Frontier-Based Exploration:**
 Algorithms for frontier exploration focus on the frontiers, finding and choosing those that offer the most exciting potential for discovery. When the agent travels to these frontiers, it gains new knowledge about its surroundings, including the location of obstacles and their features.
@@ -49,6 +45,9 @@ These algorithms ensure that an agent thoroughly explores every region by givi
 3. **Information-Gain Frontier Exploration:**
 These algorithms are designed to maximize the agent's ability to learn. They frequently follow metrics like entropy or mutual information, which quantify the uncertainty or information content of uncharted territory, to concentrate on places that promise the most interesting data.
 
+### Frontier Exploration Basic
+1. **Sensors and Mapping:**
+Frontier exploration is fundamentally dependent on sensors. Sensors provide an agent/robotic system information about its environment. Common sensors utilised within the field include LiDAR, cameras, depth sensors, inertial measurement units (IMU), time of flight (TOF) and many more. In recent frontier exploration projects, agents are able to create and update maps of the region being explored in real-time by employing Simultaneous Localization and Mapping (SLAM) algorithms which often employ 3D occupancy grid maps and aid in efficient real-time navigation when employed in a human-machine teamed environment
 
 ### Decision-Making in Frontier Exploration
 1. **The Role of -Making:**
@@ -59,7 +58,7 @@ Exploration is the process of seeking new information, while exploitation is the
 
 ADD EXAMPLE HERE 
 
-4. **Risk Assessment in Exploration:**
+3. **Risk Assessment in Exploration:**
 Risk assessment examines potential obstacles or risks in unexplored territories. To decide on safe exploration policies, agents must evaluate risks related to frontiers, such as collision danger or environmental concerns.
 
 
