@@ -171,46 +171,46 @@ Frontier exploration may have applications in the mining industry, where robots 
 
 Frontier exploration is an active field with continuous research addressing numerous opportunities and difficulties. Open research issues and areas of investigation in this area include:
 
-1. **Autonomous Exploration Efficiency:** 
-#### Multi-Robot Coordination: 
+### Autonomous Exploration Efficiency:
+1. **Multi-Robot Coordination:**
 How can several agents work together effectively to explore new frontiers while maximizing coverage and reducing redundancy? Real-time coordination of various agents' actions is still a difficult task.
-#### Adaptive Exploration: 
+2. **Adaptive Exploration:**
 How can agents modify their exploration tactics in response to environmental factors like resource availability, terrain roughness, or environmental conditions?
 
-2. **Robotic Sensing and Perception:** 
-#### Enhanced Sensor Integration: 
+### Robotic Sensing and Perception: 
+1. **Enhanced Sensor Integration:**
 How can agents enhance their perception abilities in activities requiring frontier exploration by integrating and utilizing a wider variety of sensors, such as cutting-edge vision systems, radar, and spectroscopy?
-#### Dealing with Uncertainty: 
+2. **Dealing with Uncertainty:**
 How can agents operate in unpredictable situations with noisy sensor data? It is crucial to have excellent mapping and perception methods that can function even under difficult circumstances.
 
-3. **Decision-Making and Planning:**
-#### Optimal Path Planning: 
+### Decision-Making and Planning:
+1. **Optimal Path Planning:** 
 What path-planning algorithms are most effective and efficient for guiding agents through challenging environments? How do these algorithms take into account practical limits like energy restrictions or security concerns?
-#### Human-Robot Collaboration: 
+2. **Human-Robot Collaboration:**
 How can agents effectively cooperate in a human-machine-teamed environment or support human operators in situations involving frontier exploration? This covers communication and joint decision-making techniques.
 
-4. **Mapping and Localization:**
-#### Long-Term Mapping:
+### Mapping and Localization:
+1. **Long-Term Mapping:**
 How can agents keep precise and current maps of their surroundings during prolonged periods of exploration, taking into account environmental changes and sensor deterioration?
-#### Resource-Efficient Mapping: 
+2. **Resource-Efficient Mapping:**
 How to create methods for resource-efficient mapping that maximize the use of their onboard processing power, memory, and communication bandwidth?
 
-5. **Adaptation to Dynamic Environments:**
-#### Dynamic Object Handling: 
+### Adaptation to Dynamic Environments:
+1. **Dynamic Object Handling:**
 How are agents capable of adjusting to dynamic and shifting surroundings, such as those with shifting topography or moving obstacles? It is crucial to develop methods for immediate re-planning and barrier avoidance.
-#### Environmental Changes: 
+2. **Environmental Changes:**
 How are severe environmental changes, including those caused by emergencies or damaged infrastructure, detected and handled by agents during exploration missions?
 
-6. **Human-Robot Interaction:**
-#### User-Friendly Interfaces: 
+### Human-Robot Interaction:
+1. **User-Friendly Interfaces:** 
 What are the most effective approaches to create user interfaces and interaction modalities that allow users to effectively monitor or control autonomous frontier exploration tasks?
-#### Safety and Ethical Considerations: 
+2. **Safety and Ethical Considerations:**
 How might safety precautions and ethical considerations be incorporated into autonomous exploration missions, particularly in situations when agents are operating close to people or in delicate environments?
 
-7. **Scalability and Generalization:**
-#### Scalable Solutions: 
+### Scalability and Generalization:
+1. **Scalable Solutions:**
 How can efficiency be maintained while scaling up techniques and methodologies for frontier exploration in big, complicated, or uncharted environments?
-#### Generalization Across Domains: 
+2. **Generalization Across Domains:**
 Can generalization across domains be made using the lessons acquired from one area of frontier exploration?
 
 ## References:
