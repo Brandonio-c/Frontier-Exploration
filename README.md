@@ -171,7 +171,7 @@ How can agents effectively cooperate in a human-machine-teamed environment or 
 #### Long-Term Mapping:
 How can agents keep precise and current maps of their surroundings during prolonged periods of exploration, taking into account environmental changes and sensor deterioration?
 #### Resource-Efficient Mapping: 
-CHow to create methods for resource-efficient mapping that maximize the use of their onboard processing power, memory, and communication bandwidth?
+How to create methods for resource-efficient mapping that maximize the use of their onboard processing power, memory, and communication bandwidth?
 
 5. **Adaptation to Dynamic Environments:**
 #### Dynamic Object Handling: 
