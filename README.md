@@ -17,11 +17,9 @@ Welcome to the GitHub Pages repository for the overview of frontier exploration 
 9. [References](#references)
 
 ## Summary
-
 Frontier exploration is motivated by the desire to investigate areas that are dangerous, unreachable, or have not yet been visited by humans. These unexplored environments can be anything from deep-sea locales to regions of space to Earth's disaster-stricken areas. Mapping the investigated area, deciding where to explore next, and adapting to dynamic and changing conditions are among the primary open research areas of frontier exploration. In the following article, an agent refers to an autonomous robotic platform of some design (UGV, UAV etc)
 
 ## Formal Definition
-
 Frontier exploration is the identification and methodical investigation of "frontiers," or unexplored boundaries that separate the known and unknown regions within an environment. These frontiers represent areas where the agent has incomplete or uncertain information about its surroundings and are typically associated with regions that could contain valuable information, obstacles, or points of interest. Frontier exploration is centred on the challenge of independently exploring and mapping these unexplored frontiers in order to identify noteworthy or interesting locations. 
 
 Algorithms for frontier exploration, like ADD PAPER FROM REFERENCES, are developed to automate the process of path planning and obstacle avoidance along routes to the frontiers.
@@ -53,7 +51,7 @@ These algorithms are designed to maximize the agent's ability to learn. They fr
 
 
 ### Decision-Making in Frontier Exploration
-1. **The Role of Decision-Making:**
+1. **The Role of -Making:**
 Decision-making in frontier exploration involves determining the agent's next optimal path of best action to arrive at a destination or waypoint. To make appropriate choices, this method integrates the agent's a-priori knowledge of the environment, sensor data, and exploratory policy.
 
 2. **Balancing Exploration and Exploitation:**
