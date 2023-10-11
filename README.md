@@ -24,7 +24,7 @@ Exploration's major question as shown in fig. 1, is about how the agent should d
 
 ![fig1](https://github.com/Brandonio-c/Frontier-Exploration/assets/98168605/24f605d8-ae4a-4ee3-9f42-0d54de3e8b7e)
 
-> Fig. 1. Frontier exploration central question. Adapted from [5] and modified by the author.
+> _**Fig. 1.** Frontier exploration central question. Adapted from [5] and modified by the author._
 
 Frontier exploration is a fundamental area within the field of autonomous robotics, primarily applied to Unmanned Aerial Vehicles (UAVs) and mobile robots. It plays a crucial role in numerous applications, notably search and rescue operations, environmental monitoring, and mapping of indoor or outdoor environments. Algorithms for frontier exploration, as seen in references [1] - [15], are developed to automate the process of path planning and obstacle avoidance along routes to these frontiers.
 
@@ -32,34 +32,61 @@ Frontier-based techniques for exploration can be broadly classified into single 
 
 ![fig2](https://github.com/Brandonio-c/Frontier-Exploration/assets/98168605/3b4a2e2e-e7d6-4e6a-9b7c-108a094fc570)
 
-> Fig. 2. Summary of frontier exploration uses for single robot and multi-robot. Adapted from [2].
+> _**Fig. 2.** Summary of frontier exploration uses for single robot and multi-robot. Adapted from [2]._
 
-## Overview 
+## Overview
 
 ### Frontier Exploration Algorithms
-1. **Frontier-Based Exploration:**
-Algorithms for frontier exploration focus on finding and choosing frontiers that offer the most exciting potential for discovery. When an agent travels to these frontiers, it gains new knowledge about its surroundings, including the location of obstacles and their features. 
 
-ADD PICTURES AND EQUATIONS HERE
+**Frontier-Based Exploration:**
+Algorithms for frontier exploration concentrate on identifying and selecting frontiers with high discovery potential. Once an agent reaches these frontiers, it gathers fresh insights about the environment, pinpointing obstacles and their features. Primarily, there are two algorithmic strategies for Frontier Exploration:
 
-2. **Coverage-Based Frontier Exploration:**
-These algorithms ensure that an agent thoroughly explores every region by giving priority to investigating new sections of the environment. Algorithms such as Spiral and grid-based patterns have been used to help achieve uniform coverage [2].
+1. **Coverage-Based Frontier Exploration:** 
+These algorithms prioritize exploring every section of the environment. Patterns such as Spiral and grid-based methods assist in ensuring uniform coverage [2].
+ 
+2. **Information-Gain Frontier Exploration:** 
+Tailored to augment the agent's learning capacity, these algorithms generally follow metrics like entropy or mutual information. These metrics help focus on areas that offer the most valuable data [3].
 
-3. **Information-Gain Frontier Exploration:**
-These algorithms are designed to maximize the agent's ability to learn. They frequently follow metrics like entropy or mutual information, which quantify the uncertainty or information content of uncharted territory, to concentrate on places that promise the most interesting data [3].
+However, irrespective of their individual strategies, all these algorithms follow a shared fundamental approach. Let's delve deeper into one of the alogrithms, [5], and see how it works to gain more insights. 
 
-### Frontier Exploration Basic
-1. **Sensors and Mapping:**
+### Problem Formulation and Approach
+
+A specific 3D space, represented as $V \subset R^3$, can be illustrated through a probabilistic occupancy cubic map, $M$. This map is composed of small cubes termed as voxels. The status of each voxel is categorized based on its occupancy probability, $M_{\text{prob}}$, into:
+
+- Free, if $0 \leq M_{\text{prob}}(i, j, k) < 0.5$
+- Unknown, if $M_{\text{prob}}(i, j, k) = 0.5$
+- Occupied, if $0.5 < M_{\text{prob}}(i, j, k) \leq 1$
+
+Initially, the entirety of space $V$ is perceived as unknown. The ultimate goal of autonomous exploration is to identify whether a specific observable voxel belongs to the free or occupied space. It's worth noting that there might be some voxels that can't be observed due to practical limitations, such as hollow spaces or narrow pockets. The exploration process is regarded as complete when there are no "unknown" voxels left in the observable section of the space. [3]
+
+![fig3](https://github.com/Brandonio-c/Frontier-Exploration/assets/98168605/38b3ab6e-eb91-41cb-9796-fb104c1aed0a)
+> _**Fig. 3.** Incremental frontier detection and clustering. The top showcases detection and removal of outdated frontiers. The bottom illustrates the detection of a new frontier and its subsequent division. Adapted from [5]_
+
+In traditional frontier exploration, frontiers are perceived as the known-free voxels adjacent to unknown ones [1]. Such frontiers, which are usually identified by processing the complete map, provide relatively coarse information. For improved planning and scalability, especially in expansive scenes, the approach has been modified. Here, detailed information is extracted from frontiers through an incremental methodology, operating within the locally updated map.
+
+**A. Frontier Information Structure:**
+Every time a new frontier cluster is formed, an associated Frontier Information Structure (FIS) is calculated. This structure retains all cells of the cluster, their average position, and an axis-aligned bounding box (AABB) for the cluster. This AABB aids in rapidly recognizing frontier changes. For exploration planning, potential viewpoints surrounding the cluster are produced, and a linked list containing connection costs between this and all other clusters is maintained. 
+
+**B. Incremental Frontier Detection and Clustering:**
+Upon every map update, the AABB of the updated region is logged. Within this AABB, outdated frontier clusters are discarded, and new ones are sought.
+
+**C. Viewpoint Generation and Cost Update:**
+Some methods simply guided agents to a cluster's center, this approach advocates for detailed decision-making as shown in fig. 4. Upon the creation of a cluster, numerous viewpoints around it are generated. The cost between clusters, required for exploration planning, is estimated using an efficient collision-free path-finding algorithm, with provisions for incremental computations to enhance performance. 
+
+![fig4](https://github.com/Brandonio-c/Frontier-Exploration/assets/98168605/a64eb888-1a0b-46ee-9fad-dbded2e8d2c2)
+> _**Fig. 4.** Depicting exploration motion in three stages: determining the shortest tour encompassing frontier clusters, refining a local segment of this global tour, and finally generating a secure, time-optimized trajectory leading to the refined tour's initial viewpoint. Adapted from [5]_
+
+
+### Frontier Exploration Sensors and Mapping
 Frontier exploration is fundamentally dependent on sensors. Sensors provide an agent/robotic system information about its environment. Common sensors utilised within the field include LiDAR, cameras, depth sensors, inertial measurement units (IMU), time of flight (TOF) and many more. In recent frontier exploration projects, agents are able to create and update maps of the region being explored in real-time by employing Simultaneous Localization and Mapping (SLAM) algorithms which often employ 3D occupancy grid maps and aid in efficient real-time navigation when employed in a human-machine teamed environment [4] - [6].
 
 ### Decision-Making in Frontier Exploration
-1. **The Role of -Making:**
 Decision-making in frontier exploration involves determining the agent's next optimal path of best action to arrive at a destination or waypoint. To make appropriate choices, this method integrates the agent's a-priori knowledge of the environment, sensor data, and exploratory policy [7]
 
-2. **Balancing Exploration and Exploitation:**
+**Balancing Exploration and Exploitation:**
 Exploration is the process of seeking new information, while exploitation is the utilization of existing knowledge or resources. Effective frontier exploration strategies seek to obtain a policy which "balances the exploration of new actions and the exploitation of known good actions to improve the agent's performance" [8].
 
-4. **Risk Assessment in Exploration:**
+**Risk Assessment in Exploration:**
 Risk assessment examines potential obstacles or risks in unexplored territories. To decide on safe exploration policies, agents must evaluate risks related to frontiers, such as collision danger or environmental concerns. Path planning is a field of research that deals with effective agent decision-making for robotic planning to enable agents to actively avoid obstacles within their environment whilst conducting frontier exploration and has been incorporated into many recent frontier-exploration projects [3] 
 
 ### Robotic Sensing and Perception
@@ -70,16 +97,17 @@ Although modern-day sensor technologies are relatively precise, minor errors int
 Navigating unknown environments poses perception various challenges. Agents must often deal with dynamic changes within the environment (e.g. people walking through a scene), varying lighting conditions, and the presence of unexpected obstacles, necessitating robust perception algorithms and techniques.
 
 ### Simultaneous Mapping and Localization (SLAM)
-1. **Building Maps of the Explored Area:**
+**Building Maps of the Explored Area:**
 Mapping techniques like occupancy grids or voxel-based mapping are often used for constructing detailed representations of explored areas [4] - [6], [9].  Most modern projects aim to build 3D maps of the environment and these maps help the agent plan paths, avoid obstacles, and maintain spatial awareness. These maps are also crucial for use in the human-machine teamed environment as they allow human operators to interact with robotically sensed information in an efficient manner. 
 
 ## Key Results
+![exploration_office](https://github.com/Brandonio-c/Frontier-Exploration/assets/98168605/12cd489e-52cc-4524-952f-c33d798ec1e2)
+> _**Fig. 5.** Frontier exploration running in a simulation. Adapted from [5]_
+
 Significant developments in the subject of frontier exploration have transformed the capacities of agents, especially UAVs and mobile agents, to navigate and survey unexplored territories. Important outcomes and accomplishments in this field include:
 
 ### Efficiency to explore unknown environments.
-Frontier exploration algorithms have significantly improved in efficiency from when the field was first proposed by Yamauchi in 1997 [1] to today. State-of-the-art frontier exploration projects use algorithms such as 
-
-ADD REFERENCE AND FORMULAS HERE 
+Frontier exploration algorithms have significantly improved in efficiency from when the field was first proposed by Yamauchi in 1997 [1] to today. State-of-the-art frontier exploration projects use algorithms such as
 
 ### Map Generation
 Making accurate representations of the places explored environment is one of the primary objectives of frontier exploration. Significant improvement in map generation can be visually observed below by contrasting the first frontier-exploration-generated environment map to a generated map from a 2023 frontier-exploration project (EGO-Swarm, FUEL) [4],[5]: 
