@@ -226,8 +226,7 @@ For more in-depth information on frontier exploration and related topics, please
 
 16. [Hui, Y., Zhang, X., Shen, H., Lu, H. and Tian, B. (2023), 'DPPM: Decentralized Exploration Planning for Multi-UAV Systems Using Lightweight Information Structure', IEEE Transactions on Intelligent Vehicles, 1-13. doi: 10.1109/TIV.2023.3322705](#hui2023)
 
-### 17
-D. C. Schedl et al. ,An autonomous drone for search and rescue in forests using airborne optical sectioning.Sci. Robot.6,eabg1188(2021).DOI:10.1126/scirobotics.abg1188
+### 17 D. C. Schedl et al. ,An autonomous drone for search and rescue in forests using airborne optical sectioning.Sci. Robot.6,eabg1188(2021).DOI:10.1126/scirobotics.abg1188
 
 
 
