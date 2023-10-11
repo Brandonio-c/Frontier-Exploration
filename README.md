@@ -53,7 +53,7 @@ However, irrespective of their individual strategies, all these algorithms follo
 
 ### Problem Formulation and Approach
 
-A specific 3D space, represented as $V \subset R^3$, can be illustrated through a probabilistic occupancy cubic map, $M$. This map is composed of small cubes termed as voxels. The status of each voxel is categorized based on its occupancy probability, $M_{\text{prob}}$, into:
+A specific 3D space, represented as V \subset R^3, can be illustrated through a probabilistic occupancy cubic map, $M$. This map is composed of small cubes termed as voxels. The status of each voxel is categorized based on its occupancy probability, $M_{\text{prob}}$, into:
 
 - Free, if $0 \leq M_{\text{prob}}(i, j, k) < 0.5$
 - Unknown, if $M_{\text{prob}}(i, j, k) = 0.5$
