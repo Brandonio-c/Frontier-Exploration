@@ -135,7 +135,7 @@ Frontier exploration has significant applications in several fields, enabling ag
 Frontier exploration techniques are vital for enabling robotic exploration of unexplored territories in environments that are inaccessible to humans. These techniques, for instance, have been used by rovers like NASA's Curiosity to traverse the Martian landscape and acquire significant knowledge of the planet's geology and climate [Read More on Curiosity Rover Frontier Exploration Here](https://www.jpl.nasa.gov/news/nasas-mars-curiosity-debuts-autonomous-navigation). Some recent expeditions for underwater robots used in deep-sea exploration have also employed frontier-based algorithms to explore previously unexplored depths, find new species, and examine underwater characteristics [Read more here](https://www.space.com/orpheus-ocean-autonomous-submarine-europa-technology). 
 
 2. **Search and Rescue:** 
-Frontier exploration plays a crucial role in search and rescue operations, helping locate and assist individuals in disaster-stricken areas. [17](#17)
+Frontier exploration plays a crucial role in search and rescue operations, helping locate and assist individuals in disaster-stricken areas. [17]
 
 
 3. **Agriculture:** P
@@ -190,11 +190,11 @@ How can efficiency be maintained while scaling up techniques and methodologies f
 #### Generalization Across Domains: 
 Can generalization across domains be made using the lessons acquired from one area of frontier exploration?
 
-## References
+References:
 
 For more in-depth information on frontier exploration and related topics, please refer to the following references:
 
-### 1. Zhou, B., Zhang, Y., Chen, X. and Shen, S. (2020), 'FUEL: Fast UAV Exploration using Incremental Frontier Structure and Hierarchical Planning', arXiv. doi: 10.48550/ARXIV.2010.11561 
+1. Zhou, B., Zhang, Y., Chen, X. and Shen, S. (2020), 'FUEL: Fast UAV Exploration using Incremental Frontier Structure and Hierarchical Planning', arXiv. doi: 10.48550/ARXIV.2010.11561 
 
 2. [Schmid, L., Pantic, M., Khanna, R., Ott, L., Siegwart, R. and Nieto, J. (2020), 'An Efficient Sampling-Based Method for Online Informative Path Planning in Unknown Environments', IEEE Robotics and Automation Letters 5(2), 1500--1507.doi: 10.1109/lra.2020.2969191](#schmid2020)
 
@@ -226,7 +226,7 @@ For more in-depth information on frontier exploration and related topics, please
 
 16. [Hui, Y., Zhang, X., Shen, H., Lu, H. and Tian, B. (2023), 'DPPM: Decentralized Exploration Planning for Multi-UAV Systems Using Lightweight Information Structure', IEEE Transactions on Intelligent Vehicles, 1-13. doi: 10.1109/TIV.2023.3322705](#hui2023)
 
-### 17 D. C. Schedl et al. ,An autonomous drone for search and rescue in forests using airborne optical sectioning.Sci. Robot.6,eabg1188(2021).DOI:10.1126/scirobotics.abg1188
+17. D. C. Schedl et al. ,An autonomous drone for search and rescue in forests using airborne optical sectioning.Sci. Robot.6,eabg1188(2021).DOI:10.1126/scirobotics.abg1188
 
 
 
