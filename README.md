@@ -1,3 +1,4 @@
+usemath: true
 # Frontier Exploration and Decision-Making in Robotics
 ## Decision Making for Robotics - Mini Project 1
 ### Team Members: Brandon Colelough, Ahmed Ashry
