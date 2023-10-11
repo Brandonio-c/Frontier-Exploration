@@ -54,13 +54,8 @@ However, irrespective of their individual strategies, all these algorithms follo
 ### Problem Formulation and Approach
 
 A specific 3D space, represented as _V_, can be illustrated through a probabilistic occupancy cubic map, _M_. This map is composed of small cubes termed as voxels. The status of each voxel is categorized based on its occupancy probability, _M_prob_, into:
-<!-- 
-- Free, if $0 \leq M_{\text{prob}}(i, j, k) < 0.5$
-- Unknown, if $M_{\text{prob}}(i, j, k) = 0.5$
-- Occupied, if $0.5 < M_{\text{prob}}(i, j, k) \leq 1$
--->
 
-<img width="713" alt="image" src="https://github.com/Brandonio-c/Frontier-Exploration/assets/98168605/153c28c1-0c16-4cde-805b-3b9d05031d69">
+<img width="500" alt="image" src="https://github.com/Brandonio-c/Frontier-Exploration/assets/98168605/153c28c1-0c16-4cde-805b-3b9d05031d69">
 
 Initially, the entirety of space $V$ is perceived as unknown. The ultimate goal of autonomous exploration is to identify whether a specific observable voxel belongs to the free or occupied space. It's worth noting that there might be some voxels that can't be observed due to practical limitations, such as hollow spaces or narrow pockets. The exploration process is regarded as complete when there are no "unknown" voxels left in the observable section of the space. [3]
 
