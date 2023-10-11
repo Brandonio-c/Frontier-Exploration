@@ -1,3 +1,4 @@
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 # Frontier Exploration and Decision-Making in Robotics
 ## Decision Making for Robotics - Mini Project 1
 ### Team Members: Brandon Colelough, Ahmed Ashry
