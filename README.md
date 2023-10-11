@@ -156,41 +156,41 @@ How can several agents work together effectively to explore new frontiers while 
 How can agents modify their exploration tactics in response to environmental factors like resource availability, terrain roughness, or environmental conditions?
 
 2. **Robotic Sensing and Perception:** 
-### Enhanced Sensor Integration: 
+#### Enhanced Sensor Integration: 
 How can agents enhance their perception abilities in activities requiring frontier exploration by integrating and utilizing a wider variety of sensors, such as cutting-edge vision systems, radar, and spectroscopy?
-### Dealing with Uncertainty: 
+#### Dealing with Uncertainty: 
 How can agents operate in unpredictable situations with noisy sensor data? It is crucial to have excellent mapping and perception methods that can function even under difficult circumstances.
 
 3. **Decision-Making and Planning:**
-### Optimal Path Planning: 
+#### Optimal Path Planning: 
 What path-planning algorithms are most effective and efficient for guiding agents through challenging environments? How do these algorithms take into account practical limits like energy restrictions or security concerns?
 
-### Human-Robot Collaboration: 
+#### Human-Robot Collaboration: 
 How can agents effectively cooperate in a human-machine-teamed environment or support human operators in situations involving frontier exploration? This covers communication and joint decision-making techniques.
 
 
 4. **Mapping and Localization:**
-### Long-Term Mapping:
+#### Long-Term Mapping:
 How can agents keep precise and current maps of their surroundings during prolonged periods of exploration, taking into account environmental changes and sensor deterioration?
-### Resource-Efficient Mapping: 
+#### Resource-Efficient Mapping: 
 CHow to create methods for resource-efficient mapping that maximize the use of their onboard processing power, memory, and communication bandwidth?
 
 5. **Adaptation to Dynamic Environments:**
-### Dynamic Object Handling: 
+#### Dynamic Object Handling: 
 How are agents capable of adjusting to dynamic and shifting surroundings, such as those with shifting topography or moving obstacles? It is crucial to develop methods for immediate re-planning and barrier avoidance.
-### Environmental Changes: 
+#### Environmental Changes: 
 How are severe environmental changes, including those caused by emergencies or damaged infrastructure, detected and handled by agents during exploration missions?
 
 6. **Human-Robot Interaction:**
-### User-Friendly Interfaces: 
+#### User-Friendly Interfaces: 
 What are the most effective approaches to create user interfaces and interaction modalities that allow users to effectively monitor or control autonomous frontier exploration tasks?
-### Safety and Ethical Considerations: 
+#### Safety and Ethical Considerations: 
 How might safety precautions and ethical considerations be incorporated into autonomous exploration missions, particularly in situations when agents are operating close to people or in delicate environments?
 
 7. **Scalability and Generalization:**
-### Scalable Solutions: 
+#### Scalable Solutions: 
 How can efficiency be maintained while scaling up techniques and methodologies for frontier exploration in big, complicated, or uncharted environments?
-### Generalization Across Domains: 
+#### Generalization Across Domains: 
 Can generalization across domains be made using the lessons acquired from one area of frontier exploration?
 
 ## References
