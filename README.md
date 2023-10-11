@@ -94,10 +94,10 @@ Multi-agent frontier exploration approaches [4], [2], [10] have showcased scalab
 ## Relationship to Decision-Making in Robotics
 Decision-making in robotics refers to the process by which an autonomous agent makes choices and takes actions to achieve the agent's goals or objectives. It involves selecting the most appropriate actions or behaviours based on the agent's current perception of the environment, its internal state, and predefined objectives. A Markov Decision Process (MDP) is a discrete-time stochastic control process that provides a mathematical framework to model decision-making in robotics and is defined by a four-part tuple; (S, A, P, R) where: 
 
-S is the agent's state space
-A is the agent's action space
-P is the transition probability
-R is some reward funciton
+S is the agent's state space <br>
+A is the agent's action space <br>
+P is the transition probability <br>
+R is some reward funciton <br>
 
 Frontier exploration is intimately tied to decision-making in robotics as it involves fully an agent constantly making autonomous choices and hence taking actions to achieve the goal of environment exploration wherein S is the environment (explored and unexplored), A is the agent's movement through and sensing of the environment, P is the transition probability given the environment and R is a provided function or policy that is used to influence the autonomous agent to explore frontiers. Frontier exploration uses MDPs to maximize the agent's actions in unexplored territories. Frontier exploration scenarios are particularly suited for MDPs because they offer a formal framework for modelling decision-making issues under uncertainty. The agent must autonomously decide an optimal policy on its exploration journey while accounting for a number of goals, such as information gathering and coverage. Every action, such as moving locations or gaining sensor information, has a corresponding benefit or cost, and the agent seeks to identify an action that maximizes its anticipated cumulative benefit over time.
 
