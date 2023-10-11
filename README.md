@@ -20,9 +20,9 @@ Welcome to the GitHub Pages repository for the overview of frontier exploration 
 Frontier exploration is motivated by the need to explore unknown environments that may be dangerous, unreachable, or just have not yet been visited by humans. These unexplored environments can be anything from deep-sea locales to regions of space to Earth's disaster-stricken areas. Mapping the investigated area, deciding where to explore next, and adapting to dynamic and changing conditions are among the primary open research areas of frontier exploration. In the following article, an agent refers to an autonomous robotic platform of some design (UGV, UAV etc)
 
 ## Formal Definition
-Frontier exploration is the identification and methodical investigation of "frontiers," or unexplored boundaries that separate the known and unknown regions within an environment. These frontiers represent areas where the agent has incomplete or uncertain information about its surroundings and are typically associated with regions that could contain valuable information, obstacles, or points of interest. Frontier exploration is centred on the challenge of independently exploring and mapping these unexplored frontiers in order to identify noteworthy or interesting locations. 
+Frontier exploration is the identification and methodical investigation of "frontiers," or "regions on the boundary between open space and unexplored space" [1]. These frontiers represent areas where the agent has incomplete or uncertain information about its surroundings and are typically associated with regions that could contain valuable information, obstacles, or points of interest. Frontier exploration is centred on the challenge of independently exploring and mapping these unexplored frontiers in order to identify noteworthy or interesting locations. 
 
-Algorithms for frontier exploration, such as those observed in , are developed to automate the process of path planning and obstacle avoidance along routes to the frontiers.
+Algorithms for frontier exploration, such as those observed in [1] - [15], are developed to automate the process of path planning and obstacle avoidance along routes to the frontiers.
 
 ADD SOME INFO HERE ABOUT ALGORITHMS (MAYBE A FORMAL ALGORITHM?)
 
@@ -34,7 +34,7 @@ ADD SOME PICS/ VIDS HERE FOR FRONTIER EXPLORATION
 
 ### Frontier Exploration Algorithms
 1. **Frontier-Based Exploration:**
-Algorithms for frontier exploration focus on the frontiers, finding and choosing those that offer the most exciting potential for discovery. When the agent travels to these frontiers, it gains new knowledge about its surroundings, including the location of obstacles and their features.
+A concept first introduced in 1997, algorithms for frontier exploration focus on the frontiers, finding and choosing those that offer the most exciting potential for discovery. When the agent travels to these frontiers, it gains new knowledge about its surroundings, including the location of obstacles and their features. 
 
 ADD PICTURES AND EQUATIONS HERE
 
