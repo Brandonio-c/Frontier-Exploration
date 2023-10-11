@@ -93,7 +93,7 @@ ADD REFERENCE AND FORMULAS HERE
 Making accurate representations of the places explored environment is one of the primary objectives of frontier exploration. Significant improvement in map generation can be visually observed below by contrasting the first frontier-exploration-generated environment map to a generated map from a 2023 frontier-exploration project (FUEL): 
 
 ### Frontier-Selection.
-Frontier selection algorithms incorporate factors like uncertainty, obstacles, and information gain, with the objective of optimal environment exploration to strategically prioritizs frontiers. The integration of Markov decision processes (MDPs) and reinforcement learning has further optimized exploration strategies, enabling agents to take actions that maximize environmental understanding through pre-learned policies.
+Frontier selection algorithms incorporate factors like uncertainty, obstacles, and information gain, with the objective of optimal environment exploration to strategically prioritise frontiers. The integration of Markov decision processes (MDPs) and reinforcement learning has further optimized exploration strategies, enabling agents to take actions that maximize environmental understanding through pre-learned policies.
 
 ### Dynamic and Changing Environments:
 Some modern frontier exploration algorithms [ADD REFERENCE] can adapt to dynamic changes and are not limited to static situations. Sensor-equipped agents continuously update their maps and exploration paths to account for moving objects, obstacles, and general dynamic environmental circumstances. This adaptability ensures that the goal of optimal environment exploration remains effective in scenarios where the environment is not static.
@@ -108,103 +108,93 @@ Multi-agent frontier exploration approaches [ADD REFERENCE] have showcased scala
 ## Relationship to Decision-Making in Robotics
 Frontier exploration in robotics is intimately tied to decision-making processes, frequently utilizing complex methods like Reinforcement Learning (RL) and Markov Decision Processes (MDPs) to maximize robot actions in uncharted areas. Frontier exploration scenarios are particularly suited for MDPs because they offer a formal framework for modelling decision-making issues under uncertainty. The agent must autonomously decide an optimal policy on its exploration journey while accounting for a number of goals, such as information gathering and coverage. Every action, such as moving locations or gaining sensor information, has a corresponding benefit or cost, and the agent seeks to identify an action that maximizes its anticipated cumulative benefit over time.
 
-Reinforcement learning is a powerful tool employed in frontier exploration to take optimal actions in areas such as obstacle avoidance and path planning. For example, as observed in [ADD REFERENCE] an agent employs reinforcement learning algorithms to optimal paths to avoid obstacles within the environment whilst effectively exploring frontiers. These algorithms use a reward-based system wherein desirable actions, like successfully avoiding obstacles, are rewarded positively, while undesirable outcomes, like collisions, are penalized. Agents can modify their decision-making process and develop obstacle-avoidance policies by learning over time from these rewards. This allows agents efficiently explore unexplored territories while navigating safely around obstacles within the terrain and making sensible choices to prevent collisions [ADD REFERENCE].
+Reinforcement learning is a powerful tool employed in frontier exploration to take optimal actions in areas such as obstacle avoidance and path planning. For example, as observed in [ADD REFERENCE] an agent employs reinforcement learning algorithms to optimal paths to avoid obstacles within the environment whilst effectively exploring frontiers. These algorithms use a reward-based system wherein desirable actions, like successfully avoiding obstacles, are rewarded positively, while undesirable outcomes, like collisions, are penalized. Agents can modify their decision-making process and develop obstacle-avoidance policies by learning over time from these rewards. This allows agents to efficiently explore unexplored territories while navigating safely around obstacles within the terrain and making sensible choices to prevent collisions [ADD REFERENCE].
 
 Deep Q-Networks (DQNs), have also been applied to frontier exploration tasks [ADD REFERENCE]. 
 
-A real world example of decision making being employed by agents through frontier exploration is observed [ADD REFERENCE TO PROJECT]
+A real-world example of decision-making being employed by agents through frontier exploration is observed [ADD REFERENCE TO PROJECT]
 
 ## Variants
 
-Frontier exploration is a versatile field, and there are several variants and extensions of the basic frontier exploration concept. Here's a brief overview of some notable variants:
+Frontier exploration is a diverse area of research, and many variations and extensions exist. A brief summary of several major variations is provided below:
 
-1. **Multi-Robot Exploration:** 
-In scenarios involving multiple robots or drones, the coordination and collaboration of robots become crucial. Multi-robot frontier exploration focuses on distributing exploration tasks among a team of robots efficiently. Coordination mechanisms, such as task allocation algorithms and communication protocols, are used to ensure that robots explore different areas while avoiding redundancy and collisions.
+1. **Multi-Agent Exploration:** 
+The objective of multi-agent frontier exploration is to efficiently distribute exploration tasks among a team/swarm of agents. Agents explore various locations simultaneously while avoiding repetition and collisions thanks to coordination techniques including task allocation algorithms and communication protocols. A great example of this is shown below by the EGO-Planner Frontier exploration project [REFERNECE]
 
-2. **Dynamic Environment Exploration:** 
-Dynamic environment Frontier Exploration: In dynamic environments where objects or obstacles can move or change over time, dynamic frontier exploration adapts to these changes. Robots continuously update their maps and exploration plans to account for dynamic obstacles or evolving environmental conditions, ensuring effective exploration even in volatile settings.
+2. **Time-Optimal Frontier Exploration:**
+The objective of time-optimized exploration is to reduce the amount of time needed to fully explore an environment. This variation takes into consideration variables such as agent speed and resource constraints. This group of algorithms focuses on designing path policies that allow agents to explore as much as they can in a constrained amount of time, which is useful in time-sensitive applications like search and rescue.
 
-3. **Time-Optimal Frontier Exploration:** Optimizing exploration considering limited resources.
-Time-optimized exploration aims to minimize the time required to explore an environment fully. This variant considers factors like robot speed, battery life, and the urgency of exploration. Algorithms in this category focus on planning paths that allow robots to explore as much as possible in a limited time frame, which is valuable in time-sensitive applications like search and rescue.
+3. **Human-Robot Collaboration in Frontier Exploration:** 
+This variation has a focus on the human-machine-teamed environment. Agents assist individuals in exploring new or hazardous environments by automatically recognizing obstacles or hazards and recommending potential areas of interest. Agent exploration can also be directed by human inputs, preferences, or high-level instructions.
 
-4. **Dynamic environment Frontier Exploration:** 
-In dynamic environments where objects or obstacles can move or change over time, dynamic frontier exploration adapts to these changes. Robots continuously update their maps and exploration plans to account for dynamic obstacles or evolving environmental conditions, ensuring effective exploration even in volatile settings.
-
-5. **Human-Robot Collaboration in Frontier Exploration:** 
-This variant emphasizes the collaboration between robots and human operators. Robots assist humans in exploring unknown or hazardous environments by autonomously identifying frontiers and suggesting points of interest for further investigation. Human inputs, preferences, or high-level directives can guide robot exploration.
-
-6. **Sparse Frontier Exploration:**
-Sparse exploration focuses on identifying and exploring only the most valuable or informative frontiers, rather than exhaustively covering the entire environment. By prioritizing regions with higher uncertainty or relevance, robots can optimize their exploration efforts in applications like scientific data collection.
-
-
-7. **Adaptive Frontier Exploration:**
-Adaptive exploration techniques enable robots to adjust their exploration strategies based on real-time feedback and changing mission objectives. Machine learning and adaptive control methods play a role in helping robots learn and adapt their exploration behaviours over time.
+4. **Sparse Frontier Exploration:**
+Rather than thoroughly surveying the entire area, sparse exploration concentrates on locating and investigating only the most valuable or informative frontiers. Agents can maximize their exploration efforts in applications like data collection by providing higher priority to locations with greater ambiguity or relevance.
 
 ## Important Applications
 
-Frontier exploration has found important applications across various domains, empowering robots and autonomous systems to tackle diverse challenges:
+Frontier exploration has significant applications in several fields, enabling agents and autonomous systems to take on an array of tasks such as:
 
-1. **Autonomous Exploration:** Enabling robots to explore uncharted territories in space, deep sea, and hazardous environments.
-Frontier exploration techniques are vital for enabling robots to explore uncharted territories in environments that are inaccessible or hazardous to humans. In space exploration, rovers like NASA's Curiosity have employed these methods to traverse the Martian landscape and gather valuable data about the planet's geology and climate. In deep-sea exploration, underwater robots equipped with sonar and cameras use frontier-based algorithms to navigate the unexplored depths, discover new species, and investigate underwater features. Additionally, frontier exploration aids in the exploration of hostile environments such as nuclear facilities, volcanoes, and radioactive zones, where robots can safely gather data without exposing humans to danger.
-
-
-2. **Search and Rescue:** Finding and assisting people in disaster-stricken areas.
-Frontier exploration plays a crucial role in search and rescue operations, helping locate and assist individuals in disaster-stricken areas. Unmanned aerial vehicles (UAVs) equipped with thermal cameras and sensors can swiftly search for survivors in the aftermath of earthquakes, hurricanes, or avalanches. These robots use frontier-based techniques to identify areas with potential signs of life or survivors in need of help. Furthermore, ground robots can navigate hazardous terrain and debris to reach trapped victims, enhancing the effectiveness of search and rescue missions.
+1. **Autonomous Exploration:** 
+Frontier exploration techniques are vital for enabling robotic exploration of unexplored territories in environments that are inaccessible to humans. These techniques, for instance, have been used by rovers like NASA's Curiosity to traverse the Martian landscape and acquire significant knowledge of the planet's geology and climate. Underwater robots with sonar and cameras used in deep-sea exploration also employ frontier-based algorithms to explore previously unexplored depths, find new species, and examine underwater characteristics [provide link]. 
 
 
-3. **Agriculture:** Precision farming and monitoring of crop fields.
-In agriculture, frontier exploration contributes to precision farming and the monitoring of crop fields. Autonomous ground robots equipped with sensors and cameras can systematically survey fields, identify crop health issues, and optimize the use of resources like water and fertilizers. By efficiently exploring agricultural landscapes, these robots help farmers make data-driven decisions to improve crop yields, reduce costs, and minimize environmental impact. They can also detect and respond to anomalies such as pest infestations or diseases, enabling early intervention and crop protection.
+2. **Search and Rescue:** 
+Frontier exploration plays a crucial role in search and rescue operations, helping locate and assist individuals in disaster-stricken areas. [Provide link to UAVs being used in SAR]
 
-4. **Mining:** Exploring and mapping mines to enhance safety and efficiency.
-Frontier exploration is valuable in the mining industry, where robots are used to explore and map underground mines to enhance safety and efficiency. Autonomous drones and ground robots equipped with LiDAR and mapping sensors can navigate complex underground environments, assess geological conditions, and create detailed 3D maps of mines. This information aids in mine planning, hazard identification, and resource management. By exploring and mapping mines autonomously, robots contribute to minimizing risks for human miners and improving the productivity of mining operations.
 
+3. **Agriculture:** P
+Frontier exploration helps with precision farming and agricultural field monitoring in agriculture. agents that are autonomous and outfitted with cameras and sensors can systematically inspect fields, spot crop health problems, and make the best use of resources like fertilizer and water. These robots assist farmers in making data-driven decisions to increase crop yields, lower expenses, and have the least amount of negative environmental impact by efficiently exploring agricultural environments. They can also spot abnormalities like insect infestations or diseases and react to them, allowing for early crop protection and intervention. [Provide link]
+
+4. **Mining:** 
+In the mining industry, where robots are employed to explore and map underground mines to increase safety and efficiency, frontier exploration is valuable. LiDAR and mapping sensors on autonomous drones and ground robots allow them to navigate challenging underground areas, evaluate geological conditions, and produce accurate 3D maps of mines. This knowledge is useful for resource management, danger detection, and mining planning. Robots help to reduce risks for human miners and increase mining output by autonomously exploring and charting mines.
 
 ## Open Research Questions
 
-Frontier exploration is a dynamic field with ongoing research that addresses various challenges and opportunities. Some of the open research questions and areas of exploration in this field include:
+Frontier exploration is an active field with continuous research addressing numerous opportunities and difficulties. Open research issues and areas of investigation in this area include:
 
 1. **Autonomous Exploration Efficiency:** 
 ### Multi-Robot Coordination: 
-How can multiple robots collaborate efficiently in frontier exploration tasks to maximize coverage and minimize redundancy? Coordinating the actions of multiple agents in real-time remains a complex challenge.
+How can several agents work together effectively to explore new frontiers while maximizing coverage and reducing redundancy? Real-time coordination of various agents' actions is still a difficult task.
 ### Adaptive Exploration: 
-How can robots adapt their exploration strategies based on the characteristics of the environment, such as terrain ruggedness, resource distribution, or environmental conditions?
+How can agents modify their exploration tactics in response to environmental factors like resource availability, terrain roughness, or environmental conditions?
 
 2. **Robotic Sensing and Perception:** 
 ### Enhanced Sensor Integration: 
-How can robots integrate and leverage a broader range of sensors, including advanced vision systems, radar, and spectroscopy, to improve their perception capabilities in frontier exploration tasks?
+How can agents enhance their perception abilities in activities requiring frontier exploration by integrating and utilizing a wider variety of sensors, such as cutting-edge vision systems, radar, and spectroscopy?
 ### Dealing with Uncertainty: 
-How can robots handle uncertainty and noisy sensor data in unknown environments? Robust perception and mapping techniques that can operate effectively in adverse conditions are essential.
+How can agents operate in unpredictable situations with noisy sensor data? It is crucial to have excellent mapping and perception methods that can function even under difficult circumstances.
 
 3. **Decision-Making and Planning:**
 ### Optimal Path Planning: 
-What are the most efficient and effective path-planning algorithms for robots to navigate complex and dynamic environments? How can these algorithms account for real-world constraints, such as energy limitations or safety considerations?
+What path-planning algorithms are most effective and efficient for guiding agents through challenging environments? How do these algorithms take into account practical limits like energy restrictions or security concerns?
+
 ### Human-Robot Collaboration: 
-How can robots effectively collaborate with humans or work alongside them in frontier exploration scenarios? This includes shared decision-making and communication strategies.
+How can agents effectively cooperate in a human-machine-teamed environment or support human operators in situations involving frontier exploration? This covers communication and joint decision-making techniques.
 
 
 4. **Mapping and Localization:**
 ### Long-Term Mapping:
-How can robots maintain accurate and up-to-date maps of environments over extended periods of exploration, considering changes in the environment and sensor degradation?
+How can agents keep precise and current maps of their surroundings during prolonged periods of exploration, taking into account environmental changes and sensor deterioration?
 ### Resource-Efficient Mapping: 
-Can robots develop techniques for resource-efficient mapping, optimizing the use of onboard computation, memory, and communication bandwidth?
+CHow to create methods for resource-efficient mapping that maximize the use of their onboard processing power, memory, and communication bandwidth?
 
 5. **Adaptation to Dynamic Environments:**
 ### Dynamic Object Handling: 
-How can robots adapt to dynamic and changing environments, such as those with moving obstacles or evolving terrain? Developing strategies for real-time re-planning and obstacle avoidance is essential.
+How are agents capable of adjusting to dynamic and shifting surroundings, such as those with shifting topography or moving obstacles? It is crucial to develop methods for immediate re-planning and barrier avoidance.
 ### Environmental Changes: 
-How can robots detect and respond to significant changes in the environment, such as natural disasters or infrastructure alterations, during exploration missions?
+How are severe environmental changes, including those caused by emergencies or damaged infrastructure, detected and handled by agents during exploration missions?
 
 6. **Human-Robot Interaction:**
 ### User-Friendly Interfaces: 
-What are the best ways to design user interfaces and interaction modalities that allow humans to supervise or intervene in autonomous frontier exploration tasks effectively?
+What are the most effective approaches to create user interfaces and interaction modalities that allow users to effectively monitor or control autonomous frontier exploration tasks?
 ### Safety and Ethical Considerations: 
-How can ethical considerations and safety protocols be integrated into autonomous exploration missions, especially in scenarios where robots operate near humans or sensitive environments?
+How might safety precautions and ethical considerations be incorporated into autonomous exploration missions, particularly in situations when agents are operating close to people or in delicate environments?
 
 7. **Scalability and Generalization:**
 ### Scalable Solutions: 
-How can frontier exploration algorithms and methods scale up to handle large, complex, or unknown environments while maintaining efficiency?
+How can efficiency be maintained while scaling up techniques and methodologies for frontier exploration in big, complicated, or uncharted environments?
 ### Generalization Across Domains: 
-Can lessons learned from one domain of frontier exploration be applied to others, facilitating cross-domain generalization?
+Can generalization across domains be made using the lessons acquired from one area of frontier exploration?
 
 ## References
 
