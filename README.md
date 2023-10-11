@@ -150,9 +150,9 @@ In the mining industry, where robots are employed to explore and map underground
 Frontier exploration is an active field with continuous research addressing numerous opportunities and difficulties. Open research issues and areas of investigation in this area include:
 
 1. **Autonomous Exploration Efficiency:** 
-### Multi-Robot Coordination: 
+#### Multi-Robot Coordination: 
 How can several agents work together effectively to explore new frontiers while maximizing coverage and reducing redundancy? Real-time coordination of various agents' actions is still a difficult task.
-### Adaptive Exploration: 
+#### Adaptive Exploration: 
 How can agents modify their exploration tactics in response to environmental factors like resource availability, terrain roughness, or environmental conditions?
 
 2. **Robotic Sensing and Perception:** 
