@@ -22,7 +22,7 @@ Frontier exploration is motivated by the need to explore unknown environments th
 ## Formal Definition
 Frontier exploration is the identification and methodical investigation of "frontiers," or unexplored boundaries that separate the known and unknown regions within an environment. These frontiers represent areas where the agent has incomplete or uncertain information about its surroundings and are typically associated with regions that could contain valuable information, obstacles, or points of interest. Frontier exploration is centred on the challenge of independently exploring and mapping these unexplored frontiers in order to identify noteworthy or interesting locations. 
 
-Algorithms for frontier exploration, like [ADD PAPER FROM REFERENCES], are developed to automate the process of path planning and obstacle avoidance along routes to the frontiers.
+Algorithms for frontier exploration, such as those observed in , are developed to automate the process of path planning and obstacle avoidance along routes to the frontiers.
 
 ADD SOME INFO HERE ABOUT ALGORITHMS (MAYBE A FORMAL ALGORITHM?)
 
@@ -194,19 +194,19 @@ Can generalization across domains be made using the lessons acquired from one ar
 
 For more in-depth information on frontier exploration and related topics, please refer to the following references:
 
-1. Zhou, B., Zhang, Y., Chen, X. and Shen, S. (2020), 'FUEL: Fast UAV Exploration using Incremental Frontier Structure and Hierarchical Planning', arXiv. doi: 10.48550/ARXIV.2010.11561 
+1. Yamauchi, B. (1997), A frontier-based approach for autonomous exploration, in 'Proceedings 1997 IEEE International Symposium on Computational Intelligence in Robotics and Automation CIRA97. Towards New Computational Principles for Robotics and Automation', IEEE Comput. Soc. Press, doi: 10.1109/cira.1997.613851
 
-2. Schmid, L., Pantic, M., Khanna, R., Ott, L., Siegwart, R. and Nieto, J. (2020), 'An Efficient Sampling-Based Method for Online Informative Path Planning in Unknown Environments', IEEE Robotics and Automation Letters 5(2), 1500--1507.doi: 10.1109/lra.2020.2969191
+2. Jain, U., Tiwari, R. and Godfrey, W. W. (2017), Comparative study of frontier based exploration methods, in '2017 Conference on Information and Communication Technology (CICT)', IEEE, doi: 10.1109/infocomtech.2017.8340589
 
-3. Zhou, X., Zhu, J., Zhou, H., Xu, C. and Gao, F. (2021), EGO-Swarm: A Fully Autonomous and Decentralized Quadrotor Swarm System in Cluttered Environments, in '2021 IEEE International Conference on Robotics and Automation (ICRA)', IEEE doi: 10.1109/icra48506.2021.9561902
+3. Yu, B., Kasaei, H. and Cao, M. (2023), Frontier Semantic Exploration for Visual Target Navigation, in '2023 IEEE International Conference on Robotics and Automation (ICRA)', IEEE, doi: 10.1109/icra48891.2023.10161059
 
-4. Leong, K. (2023), 'Reinforcement Learning with Frontier-Based Exploration via Autonomous Environment', arXiv. doi: 10.48550/ARXIV.2307.07296
+4. Hui, Y., Zhang, X., Shen, H., Lu, H. and Tian, B. (2023), DPPM: Decentralized Exploration Planning for Multi-UAV Systems Using Lightweight Information Structure, IEEE Transactions on Intelligent Vehicles, 1-13. doi: 10.1109/TIV.2023.3322705
 
-5. Jain, U., Tiwari, R. and Godfrey, W. W. (2017), Comparative study of frontier based exploration methods, in '2017 Conference on Information and Communication Technology (CICT)', IEEE, doi: 10.1109/infocomtech.2017.8340589
+5. Leong, K. (2023), 'Reinforcement Learning with Frontier-Based Exploration via Autonomous Environment', arXiv. doi: 10.48550/ARXIV.2307.07296
 
-6. Yamauchi, B. (1997), A frontier-based approach for autonomous exploration, in 'Proceedings 1997 IEEE International Symposium on Computational Intelligence in Robotics and Automation CIRA97. Towards New Computational Principles for Robotics and Automation', IEEE Comput. Soc. Press, doi: 10.1109/cira.1997.613851
+6. Xiao, M., Bai, Y. and Liu, W. (2023), Hot Spots, Frontiers and Trends of International EDM/LA Research, in '2023 5th International Conference on Computer Science and Technologies in Education (CSTE)', IEEE, doi: 10.1109/cste59648.2023.00067
 
-7. Yu, B., Kasaei, H. and Cao, M. (2023), Frontier Semantic Exploration for Visual Target Navigation, in '2023 IEEE International Conference on Robotics and Automation (ICRA)', IEEE, doi: 10.1109/icra48891.2023.10161059
+7. Chen, X., Zheng, J. and Hu, Q. (2023), 'A Hybrid Planning Method for 3D Autonomous Exploration in Unknown Environments With a UAV', IEEE Transactions on Automation Science and Engineering, 1--12. doi: 10.1109/tase.2023.3316207
 
 8. Zhao, Y., Yan, L., Xie, H., Dai, J. and Wei, P. (2023), 'Autonomous Exploration Method for Fast Unknown Environment Mapping by Using UAV Equipped with Limited FOV Sensor', IEEE Transactions on Industrial Electronics, 1--10. doi: 10.1109/tie.2023.3285921
 
@@ -220,10 +220,12 @@ For more in-depth information on frontier exploration and related topics, please
 
 13. Liu, Y.-F., Hsieh, C.-Y. and Kuo, S.-Y. (2023), Boomerang: Physical-Aware Design Space Exploration Framework on RISC-V SonicBOOM Microarchitecture, in '2023 IEEE 34th International Conference on Application-specific Systems, Architectures and Processors (ASAP)', IEEE, doi: 10.1109/asap57973.2023.00026
 
-14. Chen, X., Zheng, J. and Hu, Q. (2023), 'A Hybrid Planning Method for 3D Autonomous Exploration in Unknown Environments With a UAV', IEEE Transactions on Automation Science and Engineering, 1--12. doi: 10.1109/tase.2023.3316207
+14. Zhou, X., Zhu, J., Zhou, H., Xu, C. and Gao, F. (2021), EGO-Swarm: A Fully Autonomous and Decentralized Quadrotor Swarm System in Cluttered Environments, in '2021 IEEE International Conference on Robotics and Automation (ICRA)', IEEE doi: 10.1109/icra48506.2021.9561902
 
-15. Xiao, M., Bai, Y. and Liu, W. (2023), Hot Spots, Frontiers and Trends of International EDM/LA Research, in '2023 5th International Conference on Computer Science and Technologies in Education (CSTE)', IEEE, doi: 10.1109/cste59648.2023.00067
+15. Zhou, B., Zhang, Y., Chen, X. and Shen, S. (2020), 'FUEL: Fast UAV Exploration using Incremental Frontier Structure and Hierarchical Planning', arXiv. doi: 10.48550/ARXIV.2010.11561
 
-16. Hui, Y., Zhang, X., Shen, H., Lu, H. and Tian, B. (2023), DPPM: Decentralized Exploration Planning for Multi-UAV Systems Using Lightweight Information Structure, IEEE Transactions on Intelligent Vehicles, 1-13. doi: 10.1109/TIV.2023.3322705
+16. D. C. Schedl et al. ,(2021), An autonomous drone for search and rescue in forests using airborne optical sectioning.Sci. Robot.6,eabg1188, doi: 10.1126/scirobotics.abg1188
 
-17. D. C. Schedl et al. ,(2021), An autonomous drone for search and rescue in forests using airborne optical sectioning.Sci. Robot.6,eabg1188, doi: 10.1126/scirobotics.abg1188
+    
+
+
