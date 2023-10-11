@@ -101,7 +101,7 @@ R is some reward funciton
 
 Frontier exploration is intimately tied to decision-making in robotics as it involves fully an agent constantly making autonomous choices and hence taking actions to achieve the goal of environment exploration wherein S is the environment (explored and unexplored), A is the agent's movement through and sensing of the environment, P is the transition probability given the environment and R is a provided function or policy that is used to influence the autonomous agent to explore frontiers. Frontier exploration uses MDPs to maximize the agent's actions in unexplored territories. Frontier exploration scenarios are particularly suited for MDPs because they offer a formal framework for modelling decision-making issues under uncertainty. The agent must autonomously decide an optimal policy on its exploration journey while accounting for a number of goals, such as information gathering and coverage. Every action, such as moving locations or gaining sensor information, has a corresponding benefit or cost, and the agent seeks to identify an action that maximizes its anticipated cumulative benefit over time.
 
-Reinforcement learning is a powerful tool employed in frontier exploration to take optimal actions in areas such as obstacle avoidance and path planning. For example, as observed in [ADD REFERENCE] an agent employs reinforcement learning algorithms to optimal paths to avoid obstacles within the environment whilst effectively exploring frontiers. These algorithms use a reward-based system wherein desirable actions, like successfully avoiding obstacles, are rewarded positively, while undesirable outcomes, like collisions, are penalized. Agents can modify their decision-making process and develop obstacle-avoidance policies by learning over time from these rewards. This allows agents to efficiently explore unexplored territories while navigating safely around obstacles within the terrain and making sensible choices to prevent collisions [ADD REFERENCE].
+Reinforcement Learning is a robotic decision-making paradigm used within machine learning whereby an agent learns an optimal policy by interacting with an environment and receiving rewards based on some goal. Recent frontier exploration projects [8], [12] have adopted reinforcement and deep-reinforcement learning techniques to take optimal actions in areas such as obstacle avoidance and path planning. These algorithms use a reward-based system wherein desirable actions, like successfully avoiding obstacles, are rewarded positively, while undesirable outcomes, like collisions, are penalized. The algorithm used in [12] employs a deep-RL strategy to "learn a frontier semantic policy that selects long-term exploration goals." which further demonstrates the direct applicability of frontier exploration to decision-making in robotics. 
 
 ## Variants
 
@@ -114,27 +114,26 @@ The objective of multi-agent frontier exploration is to efficiently distribute 
 The objective of time-optimized exploration is to reduce the amount of time needed to fully explore an environment. This variation takes into consideration variables such as agent speed and resource constraints. This group of algorithms focuses on designing path policies that allow agents to explore as much as they can in a constrained amount of time, which is useful in time-sensitive applications like search and rescue.
 
 3. **Human-Robot Collaboration in Frontier Exploration:** 
-This variation has a focus on the human-machine-teamed environment. Agents assist individuals in exploring new or hazardous environments by automatically recognizing obstacles or hazards and recommending potential areas of interest. Agent exploration can also be directed by human inputs, preferences, or high-level instructions.
+This variation has a focus on the human-machine-teamed environment. Agents assist individuals in exploring new or hazardous environments by automatically recognizing obstacles or hazards and recommending potential areas of interest. Agent exploration can also be directed by human inputs, preferences, or high-level instructions. 
 
 4. **Sparse Frontier Exploration:**
 Rather than thoroughly surveying the entire area, sparse exploration concentrates on locating and investigating only the most valuable or informative frontiers. Agents can maximize their exploration efforts in applications like data collection by providing higher priority to locations with greater ambiguity or relevance.
 
 ## Important Applications
-
 Frontier exploration has significant applications in several fields, enabling agents and autonomous systems to take on an array of tasks such as:
 
 1. **Autonomous Exploration:** 
-Frontier exploration techniques are vital for enabling robotic exploration of unexplored territories in environments that are inaccessible to humans. These techniques, for instance, have been used by rovers like NASA's Curiosity to traverse the Martian landscape and acquire significant knowledge of the planet's geology and climate [Read More on Curiosity Rover Frontier Exploration Here](https://www.jpl.nasa.gov/news/nasas-mars-curiosity-debuts-autonomous-navigation). Some recent expeditions for underwater robots used in deep-sea exploration have also employed frontier-based algorithms to explore previously unexplored depths, find new species, and examine underwater characteristics [Read more here](https://www.space.com/orpheus-ocean-autonomous-submarine-europa-technology). 
+Frontier exploration techniques  will play a vital role in enabling robotic exploration of unexplored territories in environments that are inaccessible to humans. Autonomous navigation techniques, for instance, have been used by rovers like NASA's Curiosity to traverse the Martian landscape and acquire significant knowledge of the planet's geology and climate [Read More Here](https://www.jpl.nasa.gov/news/nasas-mars-curiosity-debuts-autonomous-navigation). Some recent expeditions for underwater robots used in deep-sea exploration have also employed autonomous exploration algorithms to explore previously unexplored depths, find new species, and examine underwater characteristics [Read more here](https://www.space.com/orpheus-ocean-autonomous-submarine-europa-technology). 
 
 2. **Search and Rescue:** 
-Frontier exploration plays a crucial role in search and rescue operations, helping locate and assist individuals in disaster-stricken areas. [17]
+Frontier exploration may play a crucial role in future search and rescue operations, helping locate and assist individuals in disaster-stricken areas [13]. 
 
 
 3. **Agriculture:** P
-Frontier exploration helps with precision farming and agricultural field monitoring in agriculture. agents that are autonomous and outfitted with cameras and sensors can systematically inspect fields, spot crop health problems, and make the best use of resources like fertilizer and water. These robots assist farmers in making data-driven decisions to increase crop yields, lower expenses, and have the least amount of negative environmental impact by efficiently exploring agricultural environments. They can also spot abnormalities like insect infestations or diseases and react to them, allowing for early crop protection and intervention. [Provide link]
+Frontier exploration may have applications in assisting with precision farming and agricultural field monitoring in agriculture settings [14].
 
-4. **Mining:** 
-In the mining industry, where robots are employed to explore and map underground mines to increase safety and efficiency, frontier exploration is valuable. LiDAR and mapping sensors on autonomous drones and ground robots allow them to navigate challenging underground areas, evaluate geological conditions, and produce accurate 3D maps of mines. This knowledge is useful for resource management, danger detection, and mining planning. Robots help to reduce risks for human miners and increase mining output by autonomously exploring and charting mines.
+5. **Mining:** 
+Frontier exploration may have applications in the mining industry, where robots may be employed to explore and map underground mines to increase safety and efficiency [15]. 
 
 ## Open Research Questions
 
@@ -204,18 +203,18 @@ For more in-depth information on frontier exploration and related topics, please
 
 9. Zhu, S., Sun, X., Sun, Z. and Yuan, J. (2023), RGB-D SLAM: Active RGB-D SLAM with Active Exploration, Adaptive TEB and Active Loop Closure, in '2023 42nd Chinese Control Conference (CCC)', IEEE, doi: 10.23919/ccc58697.2023.10240308
 
-10. ui, Y., Zhang, X., Shen, H., Lu, H. and Tian, B. (2023), DPPM: Decentralized Exploration Planning for Multi-UAV Systems Using Lightweight Information Structure, IEEE Transactions on Intelligent Vehicles, 1-13. doi: 10.1109/TIV.2023.3322705
+10. Yui, Y., Zhang, X., Shen, H., Lu, H. and Tian, B. (2023), DPPM: Decentralized Exploration Planning for Multi-UAV Systems Using Lightweight Information Structure, IEEE Transactions on Intelligent Vehicles, 1-13. doi: 10.1109/TIV.2023.3322705
 
 11. Saleh, I., Borhan, N., Yunus, A., Rahiman, W., Novaliendry, D. and Risfendra (2023), Simulation of Real-Time Frontier Exploration in Confined and Cluttered Environment, in '2023 IEEE International Conference on Automatic Control and Intelligent Systems (I2CACIS)', IEEE, doi: 10.1109/i2cacis57635.2023.10193051
 
 12. Yu, B., Kasaei, H. and Cao, M. (2023), Frontier Semantic Exploration for Visual Target Navigation, in '2023 IEEE International Conference on Robotics and Automation (ICRA)', IEEE, doi: 10.1109/icra48891.2023.10161059
 
-13.Lee, E. M., Youn, D. and Myung, H. (2023), THE-Planner: Topological and Hierarchical Exploration Path Planner for Fast 3D Mapping of Outdoor Structures with UAVs, in '2023 20th International Conference on Ubiquitous Robots (UR)', IEEE, doi: 10.1109/ur57808.2023.10202255 
+13. D. C. Schedl et al. ,(2021), An autonomous drone for search and rescue in forests using airborne optical sectioning.Sci. Robot.6,eabg1188, doi: 10.1126/scirobotics.abg1188
 
-14. Zhao, Y., Yan, L., Xie, H., Dai, J. and Wei, P. (2023), 'Autonomous Exploration Method for Fast Unknown Environment Mapping by Using UAV Equipped with Limited FOV Sensor', IEEE Transactions on Industrial Electronics, 1--10. doi: 10.1109/tie.2023.3285921
+14. Fasiolo, D., Scalera, L., Maset, E., Gasparetto, A., (2023),  Towards autonomous mapping in agriculture: A review of supportive technologies for ground robotics, Robotics and Autonomous Systems, Volume 169, 2023,
+104514, doi:  10.1016/j.robot.2023.104514.
 
-15. D. C. Schedl et al. ,(2021), An autonomous drone for search and rescue in forests using airborne optical sectioning.Sci. Robot.6,eabg1188, doi: 10.1126/scirobotics.abg1188
-
+15 . C. Papachristos, S. Khattak, F. Mascarich and K. Alexis, "Autonomous Navigation and Mapping in Underground Mines Using Aerial Robots," 2019 IEEE Aerospace Conference, Big Sky, MT, USA, 2019, pp. 1-8, doi: 10.1109/AERO.2019.8741532.
 
 
     
