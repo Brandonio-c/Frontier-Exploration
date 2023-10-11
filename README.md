@@ -34,66 +34,57 @@ ADD SOME PICS/ VIDS HERE FOR FRONTIER EXPLORATION
 
 ### Frontier Exploration Algorithms
 1. **Frontier-Based Exploration:**
-A concept first introduced in 1997, algorithms for frontier exploration focus on the frontiers, finding and choosing those that offer the most exciting potential for discovery. When the agent travels to these frontiers, it gains new knowledge about its surroundings, including the location of obstacles and their features. 
+Algorithms for frontier exploration focus on finding and choosing frontiers that offer the most exciting potential for discovery. When an agent travels to these frontiers, it gains new knowledge about its surroundings, including the location of obstacles and their features. 
 
 ADD PICTURES AND EQUATIONS HERE
 
 2. **Coverage-Based Frontier Exploration:**
-These algorithms ensure that an agent thoroughly explores every region by giving priority to investigating new sections of the environment. Algorithms such as Spiral and grid-based patterns have been used to help achieve uniform coverage.
-
+These algorithms ensure that an agent thoroughly explores every region by giving priority to investigating new sections of the environment. Algorithms such as Spiral and grid-based patterns have been used to help achieve uniform coverage [2].
 
 3. **Information-Gain Frontier Exploration:**
-These algorithms are designed to maximize the agent's ability to learn. They frequently follow metrics like entropy or mutual information, which quantify the uncertainty or information content of uncharted territory, to concentrate on places that promise the most interesting data.
+These algorithms are designed to maximize the agent's ability to learn. They frequently follow metrics like entropy or mutual information, which quantify the uncertainty or information content of uncharted territory, to concentrate on places that promise the most interesting data [3].
 
 ### Frontier Exploration Basic
 1. **Sensors and Mapping:**
-Frontier exploration is fundamentally dependent on sensors. Sensors provide an agent/robotic system information about its environment. Common sensors utilised within the field include LiDAR, cameras, depth sensors, inertial measurement units (IMU), time of flight (TOF) and many more. In recent frontier exploration projects, agents are able to create and update maps of the region being explored in real-time by employing Simultaneous Localization and Mapping (SLAM) algorithms which often employ 3D occupancy grid maps and aid in efficient real-time navigation when employed in a human-machine teamed environment
+Frontier exploration is fundamentally dependent on sensors. Sensors provide an agent/robotic system information about its environment. Common sensors utilised within the field include LiDAR, cameras, depth sensors, inertial measurement units (IMU), time of flight (TOF) and many more. In recent frontier exploration projects, agents are able to create and update maps of the region being explored in real-time by employing Simultaneous Localization and Mapping (SLAM) algorithms which often employ 3D occupancy grid maps and aid in efficient real-time navigation when employed in a human-machine teamed environment [4] - [6].
 
 ### Decision-Making in Frontier Exploration
 1. **The Role of -Making:**
-Decision-making in frontier exploration involves determining the agent's next optimal path of best action to arrive at a destination or waypoint. To make appropriate choices, this method integrates the agent's a-priori knowledge of the environment, sensor data, and exploratory policy.
+Decision-making in frontier exploration involves determining the agent's next optimal path of best action to arrive at a destination or waypoint. To make appropriate choices, this method integrates the agent's a-priori knowledge of the environment, sensor data, and exploratory policy [7]
 
 2. **Balancing Exploration and Exploitation:**
-Exploration is the process of seeking new information, while exploitation is the utilization of existing knowledge or resources. Effective exploration strategies often seek to strike a balance between exploitation and exploration.
+Exploration is the process of seeking new information, while exploitation is the utilization of existing knowledge or resources. Effective frontier exploration strategies seek to obtain a policy which "balances the exploration of new actions and the exploitation of known good actions to improve the agent's performance" [8].
 
-ADD EXAMPLE HERE 
-
-3. **Risk Assessment in Exploration:**
-Risk assessment examines potential obstacles or risks in unexplored territories. To decide on safe exploration policies, agents must evaluate risks related to frontiers, such as collision danger or environmental concerns.
-
+4. **Risk Assessment in Exploration:**
+Risk assessment examines potential obstacles or risks in unexplored territories. To decide on safe exploration policies, agents must evaluate risks related to frontiers, such as collision danger or environmental concerns. Path planning is a field of research that deals with effective agent decision-making for robotic planning to enable agents to actively avoid obstacles within their environment whilst conducting frontier exploration and has been incorporated into many recent frontier-exploration projects [3] 
 
 ### Robotic Sensing and Perception
 1. **Sensor Technologies in Frontier Exploration:**
-Although modern-day sensor technologies are relatively precise, minor errors introduced due to environmental factors almost always introduce issues into agent navigation whereby agent localisation or pose estimation within the environment is cascadingly affected. The open research field of SLAM aims to solve this through algorithmic matching of environment features to correct agent pose and localisation errors. 
+Although modern-day sensor technologies are relatively precise, minor errors introduced due to environmental factors almost always introduce issues into agent navigation whereby agent localisation and/or pose estimation within the environment is cascadingly affected. The open research field of SLAM aims to solve this through algorithmic matching of environment features to correct agent pose and localisation errors and subsequent environment mapping [9].
 
 2. **Perception Challenges in Unknown Environments:**
 Navigating unknown environments poses perception various challenges. Agents must often deal with dynamic changes within the environment (e.g. people walking through a scene), varying lighting conditions, and the presence of unexpected obstacles, necessitating robust perception algorithms and techniques.
 
 ### Simultaneous Mapping and Localization (SLAM)
 1. **Building Maps of the Explored Area:**
-Mapping techniques like occupancy grids or voxel-based mapping are often used for constructing detailed representations of explored areas [EXAMPLES HERE]. Most modern projects aim to build 3D maps of the environment and these maps help the agent plan paths, avoid obstacles, and maintain spatial awareness. These maps are also crucial for use in the human-machine teamed environment as they allow human operators to interact with robotically sensed information in an efficient manner. 
-
-2. **Localization for Precise Navigation:**
-Agents must be able to localize themselves accurately in order to navigate the mapped area effectively. Current state-of-the-art projects such as [ADD REFERENCE] achieve this by ""
-
-ADD PICTURE HERE
+Mapping techniques like occupancy grids or voxel-based mapping are often used for constructing detailed representations of explored areas [4] - [6], [9].  Most modern projects aim to build 3D maps of the environment and these maps help the agent plan paths, avoid obstacles, and maintain spatial awareness. These maps are also crucial for use in the human-machine teamed environment as they allow human operators to interact with robotically sensed information in an efficient manner. 
 
 ## Key Results
 Significant developments in the subject of frontier exploration have transformed the capacities of agents, especially UAVs and mobile agents, to navigate and survey unexplored territories. Important outcomes and accomplishments in this field include:
 
 ### Efficiency to explore unknown environments.
-Frontier exploration algorithms have significantly improved in efficiency from when the field was first proposed by [ADD REFERENCE ] in 1997 to today. State-of-the-art frontier exploration projects use algorithms such as 
+Frontier exploration algorithms have significantly improved in efficiency from when the field was first proposed by Yamauchi in 1997 [1] to today. State-of-the-art frontier exploration projects use algorithms such as 
 
 ADD REFERENCE AND FORMULAS HERE 
 
 ### Map Generation
-Making accurate representations of the places explored environment is one of the primary objectives of frontier exploration. Significant improvement in map generation can be visually observed below by contrasting the first frontier-exploration-generated environment map to a generated map from a 2023 frontier-exploration project (FUEL): 
+Making accurate representations of the places explored environment is one of the primary objectives of frontier exploration. Significant improvement in map generation can be visually observed below by contrasting the first frontier-exploration-generated environment map to a generated map from a 2023 frontier-exploration project (EGO-Swarm, FUEL) [4],[5]: 
 
 ### Frontier-Selection.
 Frontier selection algorithms incorporate factors like uncertainty, obstacles, and information gain, with the objective of optimal environment exploration to strategically prioritise frontiers. The integration of Markov decision processes (MDPs) and reinforcement learning has further optimized exploration strategies, enabling agents to take actions that maximize environmental understanding through pre-learned policies.
 
 ### Dynamic and Changing Environments:
-Some modern frontier exploration algorithms [ADD REFERENCE] can adapt to dynamic changes and are not limited to static situations. Sensor-equipped agents continuously update their maps and exploration paths to account for moving objects, obstacles, and general dynamic environmental circumstances. This adaptability ensures that the goal of optimal environment exploration remains effective in scenarios where the environment is not static.
+Some modern frontier exploration algorithms [4] can adapt to dynamic changes and are not limited to static situations. Sensor-equipped agents continuously update their maps and exploration paths to account for moving objects, obstacles, and general dynamic environmental circumstances. This adaptability ensures that the goal of optimal environment exploration remains effective in scenarios where the environment is not static.
 
 ### Real-World Applications: 
 Frontier exploration has transitioned from theoretical and simulation-based research to practical applications. Physical robotic agents equipped with frontier exploration capabilities are increasingly deployed in real-world scenarios such as search and rescue operations, precision agriculture, and infrastructure inspection. These applications demonstrate the field's impact on addressing critical challenges and improving decision support in domains where efficient exploration and mapping are essential [ADD REFERENCE].
@@ -198,17 +189,17 @@ For more in-depth information on frontier exploration and related topics, please
 
 2. Jain, U., Tiwari, R. and Godfrey, W. W. (2017), Comparative study of frontier based exploration methods, in '2017 Conference on Information and Communication Technology (CICT)', IEEE, doi: 10.1109/infocomtech.2017.8340589
 
-3. Yu, B., Kasaei, H. and Cao, M. (2023), Frontier Semantic Exploration for Visual Target Navigation, in '2023 IEEE International Conference on Robotics and Automation (ICRA)', IEEE, doi: 10.1109/icra48891.2023.10161059
+3. Chen, X., Zheng, J. and Hu, Q. (2023), 'A Hybrid Planning Method for 3D Autonomous Exploration in Unknown Environments With a UAV', IEEE Transactions on Automation Science and Engineering, 1--12. doi: 10.1109/tase.2023.3316207
 
-4. Hui, Y., Zhang, X., Shen, H., Lu, H. and Tian, B. (2023), DPPM: Decentralized Exploration Planning for Multi-UAV Systems Using Lightweight Information Structure, IEEE Transactions on Intelligent Vehicles, 1-13. doi: 10.1109/TIV.2023.3322705
+4. Zhou, X., Zhu, J., Zhou, H., Xu, C. and Gao, F. (2021), EGO-Swarm: A Fully Autonomous and Decentralized Quadrotor Swarm System in Cluttered Environments, in '2021 IEEE International Conference on Robotics and Automation (ICRA)', IEEE doi: 10.1109/icra48506.2021.9561902
 
-5. Leong, K. (2023), 'Reinforcement Learning with Frontier-Based Exploration via Autonomous Environment', arXiv. doi: 10.48550/ARXIV.2307.07296
+5. Zhou, B., Zhang, Y., Chen, X. and Shen, S. (2020), 'FUEL: Fast UAV Exploration using Incremental Frontier Structure and Hierarchical Planning', arXiv. doi: 10.48550/ARXIV.2010.11561
 
-6. Xiao, M., Bai, Y. and Liu, W. (2023), Hot Spots, Frontiers and Trends of International EDM/LA Research, in '2023 5th International Conference on Computer Science and Technologies in Education (CSTE)', IEEE, doi: 10.1109/cste59648.2023.00067
+6. Schmid, L., Pantic, M., Khanna, R., Ott, L., Siegwart, R. and Nieto, J. (2020), 'An Efficient Sampling-Based Method for Online Informative Path Planning in Unknown Environments', IEEE Robotics and Automation Letters 5(2), 1500--1507.
 
-7. Chen, X., Zheng, J. and Hu, Q. (2023), 'A Hybrid Planning Method for 3D Autonomous Exploration in Unknown Environments With a UAV', IEEE Transactions on Automation Science and Engineering, 1--12. doi: 10.1109/tase.2023.3316207
+7. Milas, A., Ivanovic, A. and Petrovic, T. (2023), 'ASEP: An Autonomous Semantic Exploration Planner With Object Labeling', IEEE Access 11, 107169--107183. doi: 10.1109/access.2023.3320645
 
-8. Zhao, Y., Yan, L., Xie, H., Dai, J. and Wei, P. (2023), 'Autonomous Exploration Method for Fast Unknown Environment Mapping by Using UAV Equipped with Limited FOV Sensor', IEEE Transactions on Industrial Electronics, 1--10. doi: 10.1109/tie.2023.3285921
+8. Leong, K. (2023), 'Reinforcement Learning with Frontier-Based Exploration via Autonomous Environment', arXiv. doi: 10.48550/ARXIV.2307.07296
 
 9. Zhu, S., Sun, X., Sun, Z. and Yuan, J. (2023), RGB-D SLAM: Active RGB-D SLAM with Active Exploration, Adaptive TEB and Active Loop Closure, in '2023 42nd Chinese Control Conference (CCC)', IEEE, doi: 10.23919/ccc58697.2023.10240308
 
@@ -216,15 +207,17 @@ For more in-depth information on frontier exploration and related topics, please
 
 11. Saleh, I., Borhan, N., Yunus, A., Rahiman, W., Novaliendry, D. and Risfendra (2023), Simulation of Real-Time Frontier Exploration in Confined &amp$$ Cluttered Environment, in '2023 IEEE International Conference on Automatic Control and Intelligent Systems (I2CACIS)', IEEE, doi: 10.1109/i2cacis57635.2023.10193051
 
-12. Milas, A., Ivanovic, A. and Petrovic, T. (2023), 'ASEP: An Autonomous Semantic Exploration Planner With Object Labeling', IEEE Access 11, 107169--107183. doi: 10.1109/access.2023.3320645
+12. Yu, B., Kasaei, H. and Cao, M. (2023), Frontier Semantic Exploration for Visual Target Navigation, in '2023 IEEE International Conference on Robotics and Automation (ICRA)', IEEE, doi: 10.1109/icra48891.2023.10161059
 
-13. Liu, Y.-F., Hsieh, C.-Y. and Kuo, S.-Y. (2023), Boomerang: Physical-Aware Design Space Exploration Framework on RISC-V SonicBOOM Microarchitecture, in '2023 IEEE 34th International Conference on Application-specific Systems, Architectures and Processors (ASAP)', IEEE, doi: 10.1109/asap57973.2023.00026
+13. Zhao, Y., Yan, L., Xie, H., Dai, J. and Wei, P. (2023), 'Autonomous Exploration Method for Fast Unknown Environment Mapping by Using UAV Equipped with Limited FOV Sensor', IEEE Transactions on Industrial Electronics, 1--10. doi: 10.1109/tie.2023.3285921
 
-14. Zhou, X., Zhu, J., Zhou, H., Xu, C. and Gao, F. (2021), EGO-Swarm: A Fully Autonomous and Decentralized Quadrotor Swarm System in Cluttered Environments, in '2021 IEEE International Conference on Robotics and Automation (ICRA)', IEEE doi: 10.1109/icra48506.2021.9561902
+14. Hui, Y., Zhang, X., Shen, H., Lu, H. and Tian, B. (2023), DPPM: Decentralized Exploration Planning for Multi-UAV Systems Using Lightweight Information Structure, IEEE Transactions on Intelligent Vehicles, 1-13. doi: 10.1109/TIV.2023.3322705
 
-15. Zhou, B., Zhang, Y., Chen, X. and Shen, S. (2020), 'FUEL: Fast UAV Exploration using Incremental Frontier Structure and Hierarchical Planning', arXiv. doi: 10.48550/ARXIV.2010.11561
+15. 
 
-16. D. C. Schedl et al. ,(2021), An autonomous drone for search and rescue in forests using airborne optical sectioning.Sci. Robot.6,eabg1188, doi: 10.1126/scirobotics.abg1188
+16. Xiao, M., Bai, Y. and Liu, W. (2023), Hot Spots, Frontiers and Trends of International EDM/LA Research, in '2023 5th International Conference on Computer Science and Technologies in Education (CSTE)', IEEE, doi: 10.1109/cste59648.2023.00067
+
+17. D. C. Schedl et al. ,(2021), An autonomous drone for search and rescue in forests using airborne optical sectioning.Sci. Robot.6,eabg1188, doi: 10.1126/scirobotics.abg1188
 
     
 
