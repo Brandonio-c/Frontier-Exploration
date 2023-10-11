@@ -190,7 +190,7 @@ How can efficiency be maintained while scaling up techniques and methodologies f
 #### Generalization Across Domains: 
 Can generalization across domains be made using the lessons acquired from one area of frontier exploration?
 
-References:
+## References:
 
 For more in-depth information on frontier exploration and related topics, please refer to the following references:
 
