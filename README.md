@@ -1,8 +1,4 @@
-<head>
-<script type="text/javascript" id="MathJax-script" async
-  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
-</script>
-</head>
+
 
 # Frontier Exploration and Decision-Making in Robotics
 ## Decision Making for Robotics - Mini Project 1
