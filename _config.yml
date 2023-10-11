@@ -1,4 +1,3 @@
 theme: jekyll-theme-cayman
 title: Frontier Exploration in Robotics
 description: An overview of frontier exploration related to decision-making for robotics.
-{% include mathjax.html %}
