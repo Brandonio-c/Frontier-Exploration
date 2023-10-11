@@ -81,33 +81,27 @@ ADD REFERENCE AND FORMULAS HERE
 Making accurate representations of the places explored environment is one of the primary objectives of frontier exploration. Significant improvement in map generation can be visually observed below by contrasting the first frontier-exploration-generated environment map to a generated map from a 2023 frontier-exploration project (EGO-Swarm, FUEL) [4],[5]: 
 
 ### Frontier-Selection.
-Frontier selection algorithms incorporate factors like uncertainty, obstacles, and information gain, with the objective of optimal environment exploration to strategically prioritise frontiers. The integration of Markov decision processes (MDPs) and reinforcement learning has further optimized exploration strategies, enabling agents to take actions that maximize environmental understanding through pre-learned policies.
+Frontier selection algorithms incorporate factors like uncertainty, obstacles, and information gain, with the objective of optimal environment exploration to strategically prioritise frontiers. From the original concept, [1] presents a method that selects frontiers in evidence grids by identifying cells with open space adjacent to unexplored space, marking them as frontier edge cells, and grouping adjacent edge cells into frontier regions. In a more recent implementation, [5] selects frontiers by through a more complex algorithm that uses incremental frontier updates, rich viewpoint generation, and B-spline trajectory planning to more efficiently select frontiers. 
 
 ### Dynamic and Changing Environments:
 Some modern frontier exploration algorithms [4] can adapt to dynamic changes and are not limited to static situations. Sensor-equipped agents continuously update their maps and exploration paths to account for moving objects, obstacles, and general dynamic environmental circumstances. This adaptability ensures that the goal of optimal environment exploration remains effective in scenarios where the environment is not static.
 
-### Real-World Applications: 
-Frontier exploration has transitioned from theoretical and simulation-based research to practical applications. Physical robotic agents equipped with frontier exploration capabilities are increasingly deployed in real-world scenarios such as search and rescue operations, precision agriculture, and infrastructure inspection. These applications demonstrate the field's impact on addressing critical challenges and improving decision support in domains where efficient exploration and mapping are essential [ADD REFERENCE].
 
 ### Scalability and Adaptability: 
-Multi-agent frontier exploration approaches [ADD REFERENCE] have showcased scalability for the use of unknown environmental mapping in a teamed/swarmed environment. These approaches also demonstrate robust and effective frontier exploration and mapping in  both small indoor (complex) environments and large-scale outdoor areas, making them versatile tools for a wide range of applications. 
+Multi-agent frontier exploration approaches [4], [2], [10] have showcased scalability for the use of unknown environmental mapping in a teamed/swarmed environment. Similar approaches shown in [11] and  also demonstrate robust and effective frontier exploration and mapping in  both small indoor (complex) environments and large-scale outdoor areas, making them versatile tools for a wide range of applications. 
 
 
 ## Relationship to Decision-Making in Robotics
-Frontier exploration in robotics is intimately tied to decision-making processes, frequently utilizing complex methods like Reinforcement Learning (RL) and Markov Decision Processes (MDPs) to maximize robot actions in uncharted areas. Frontier exploration scenarios are particularly suited for MDPs because they offer a formal framework for modelling decision-making issues under uncertainty. The agent must autonomously decide an optimal policy on its exploration journey while accounting for a number of goals, such as information gathering and coverage. Every action, such as moving locations or gaining sensor information, has a corresponding benefit or cost, and the agent seeks to identify an action that maximizes its anticipated cumulative benefit over time.
+Frontier exploration in robotics is intimately tied to decision-making processes, frequently utilizing complex methods such as Markov Decision Processes (MDPs) to maximize robot actions in uncharted areas. Frontier exploration scenarios are particularly suited for MDPs because they offer a formal framework for modelling decision-making issues under uncertainty. The agent must autonomously decide an optimal policy on its exploration journey while accounting for a number of goals, such as information gathering and coverage. Every action, such as moving locations or gaining sensor information, has a corresponding benefit or cost, and the agent seeks to identify an action that maximizes its anticipated cumulative benefit over time.
 
 Reinforcement learning is a powerful tool employed in frontier exploration to take optimal actions in areas such as obstacle avoidance and path planning. For example, as observed in [ADD REFERENCE] an agent employs reinforcement learning algorithms to optimal paths to avoid obstacles within the environment whilst effectively exploring frontiers. These algorithms use a reward-based system wherein desirable actions, like successfully avoiding obstacles, are rewarded positively, while undesirable outcomes, like collisions, are penalized. Agents can modify their decision-making process and develop obstacle-avoidance policies by learning over time from these rewards. This allows agents to efficiently explore unexplored territories while navigating safely around obstacles within the terrain and making sensible choices to prevent collisions [ADD REFERENCE].
-
-Deep Q-Networks (DQNs), have also been applied to frontier exploration tasks [ADD REFERENCE]. 
-
-A real-world example of decision-making being employed by agents through frontier exploration is observed [ADD REFERENCE TO PROJECT]
 
 ## Variants
 
 Frontier exploration is a diverse area of research, and many variations and extensions exist. A brief summary of several major variations is provided below:
 
 1. **Multi-Agent Exploration:** 
-The objective of multi-agent frontier exploration is to efficiently distribute exploration tasks among a team/swarm of agents. Agents explore various locations simultaneously while avoiding repetition and collisions thanks to coordination techniques including task allocation algorithms and communication protocols. A great example of this is shown below by the EGO-Planner Frontier exploration project [REFERNECE]
+The objective of multi-agent frontier exploration is to efficiently distribute exploration tasks among a team/swarm of agents. Agents explore various locations simultaneously while avoiding repetition and collisions thanks to coordination techniques including task allocation algorithms and communication protocols.
 
 2. **Time-Optimal Frontier Exploration:**
 The objective of time-optimized exploration is to reduce the amount of time needed to fully explore an environment. This variation takes into consideration variables such as agent speed and resource constraints. This group of algorithms focuses on designing path policies that allow agents to explore as much as they can in a constrained amount of time, which is useful in time-sensitive applications like search and rescue.
@@ -203,21 +197,19 @@ For more in-depth information on frontier exploration and related topics, please
 
 9. Zhu, S., Sun, X., Sun, Z. and Yuan, J. (2023), RGB-D SLAM: Active RGB-D SLAM with Active Exploration, Adaptive TEB and Active Loop Closure, in '2023 42nd Chinese Control Conference (CCC)', IEEE, doi: 10.23919/ccc58697.2023.10240308
 
-10. Lee, E. M., Youn, D. and Myung, H. (2023), THE-Planner: Topological and Hierarchical Exploration Path Planner for Fast 3D Mapping of Outdoor Structures with UAVs, in '2023 20th International Conference on Ubiquitous Robots (UR)', IEEE, doi: 10.1109/ur57808.2023.10202255
+10. ui, Y., Zhang, X., Shen, H., Lu, H. and Tian, B. (2023), DPPM: Decentralized Exploration Planning for Multi-UAV Systems Using Lightweight Information Structure, IEEE Transactions on Intelligent Vehicles, 1-13. doi: 10.1109/TIV.2023.3322705
 
-11. Saleh, I., Borhan, N., Yunus, A., Rahiman, W., Novaliendry, D. and Risfendra (2023), Simulation of Real-Time Frontier Exploration in Confined &amp$$ Cluttered Environment, in '2023 IEEE International Conference on Automatic Control and Intelligent Systems (I2CACIS)', IEEE, doi: 10.1109/i2cacis57635.2023.10193051
+11. Saleh, I., Borhan, N., Yunus, A., Rahiman, W., Novaliendry, D. and Risfendra (2023), Simulation of Real-Time Frontier Exploration in Confined and Cluttered Environment, in '2023 IEEE International Conference on Automatic Control and Intelligent Systems (I2CACIS)', IEEE, doi: 10.1109/i2cacis57635.2023.10193051
 
 12. Yu, B., Kasaei, H. and Cao, M. (2023), Frontier Semantic Exploration for Visual Target Navigation, in '2023 IEEE International Conference on Robotics and Automation (ICRA)', IEEE, doi: 10.1109/icra48891.2023.10161059
 
 13. Zhao, Y., Yan, L., Xie, H., Dai, J. and Wei, P. (2023), 'Autonomous Exploration Method for Fast Unknown Environment Mapping by Using UAV Equipped with Limited FOV Sensor', IEEE Transactions on Industrial Electronics, 1--10. doi: 10.1109/tie.2023.3285921
 
-14. Hui, Y., Zhang, X., Shen, H., Lu, H. and Tian, B. (2023), DPPM: Decentralized Exploration Planning for Multi-UAV Systems Using Lightweight Information Structure, IEEE Transactions on Intelligent Vehicles, 1-13. doi: 10.1109/TIV.2023.3322705
+14. Lee, E. M., Youn, D. and Myung, H. (2023), THE-Planner: Topological and Hierarchical Exploration Path Planner for Fast 3D Mapping of Outdoor Structures with UAVs, in '2023 20th International Conference on Ubiquitous Robots (UR)', IEEE, doi: 10.1109/ur57808.2023.10202255
 
-15. 
+15. D. C. Schedl et al. ,(2021), An autonomous drone for search and rescue in forests using airborne optical sectioning.Sci. Robot.6,eabg1188, doi: 10.1126/scirobotics.abg1188
 
-16. Xiao, M., Bai, Y. and Liu, W. (2023), Hot Spots, Frontiers and Trends of International EDM/LA Research, in '2023 5th International Conference on Computer Science and Technologies in Education (CSTE)', IEEE, doi: 10.1109/cste59648.2023.00067
 
-17. D. C. Schedl et al. ,(2021), An autonomous drone for search and rescue in forests using airborne optical sectioning.Sci. Robot.6,eabg1188, doi: 10.1126/scirobotics.abg1188
 
     
 
