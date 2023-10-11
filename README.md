@@ -82,45 +82,37 @@ Agents must be able to localize themselves accurately in order to navigate the 
 ADD PICTURE HERE
 
 ## Key Results
+Significant developments in the subject of frontier exploration have transformed the capacities of agents, especially UAVs and mobile agents, to navigate and survey unexplored territories. Important outcomes and accomplishments in this field include:
 
-The field of frontier exploration has witnessed significant advancements that have revolutionized the capabilities of robots, particularly UAVs and mobile robots, when navigating and mapping unknown environments. Key results and achievements in this domain include:
+### Efficiency to explore unknown environments.
+Frontier exploration algorithms have significantly improved in efficiency from when the field was first proposed by [ADD REFERENCE ] in 1997 to today. State-of-the-art frontier exploration projects use algorithms such as 
 
+ADD REFERENCE AND FORMULAS HERE 
 
-### Efficiently explore unknown environments.
-Frontier exploration algorithms have significantly improved the efficiency of robotic exploration by guiding robots to previously unvisited and informative regions. These methods allow robots to systematically cover large and complex spaces while minimizing redundant exploration. Efficient path planning and frontier detection techniques have led to faster and more resource-efficient exploration missions.
+### Map Generation
+Making accurate representations of the places explored environment is one of the primary objectives of frontier exploration. Significant improvement in map generation can be visually observed below by contrasting the first frontier-exploration-generated environment map to a generated map from a 2023 frontier-exploration project (FUEL): 
 
-### Generate maps of the explored areas.
-One of the primary outcomes of frontier exploration is the generation of detailed maps of the explored areas. Robots equipped with sensors such as LiDAR, cameras, and depth sensors can build accurate three-dimensional maps of their surroundings. These maps provide valuable information for navigation, obstacle avoidance, and further analysis of the environment. Mapping techniques, such as occupancy grid mapping and OctoMap, have been employed to create high-resolution maps.
+### Frontier-Selection.
+Frontier selection algorithms incorporate factors like uncertainty, obstacles, and information gain, with the objective of optimal environment exploration to strategically prioritizs frontiers. The integration of Markov decision processes (MDPs) and reinforcement learning has further optimized exploration strategies, enabling agents to take actions that maximize environmental understanding through pre-learned policies.
 
-
-### Make informed decisions about which areas to explore next.
-Frontier exploration algorithms empower robots to make informed decisions about where to explore next. By assessing the uncertainty of an area, the presence of obstacles, and the potential for new information gain, robots can prioritize frontiers and explore strategically. Markov decision processes (MDPs) and reinforcement learning methods have been applied to optimize exploration policies, enabling robots to choose actions that maximize their understanding of the environment.
-
-### Adapt to Dynamic and Changing Environments:
-Frontier exploration is not limited to static environments; it can adapt to dynamic changes. Robots equipped with sensors continually update their maps and exploration plans to accommodate dynamic obstacles, moving objects, or changing environmental conditions. This adaptability ensures that exploration missions remain effective in scenarios where the environment is not static.
-
-### Robust Sensing and Perception:
-Advancements in sensor technologies, including LiDAR, depth cameras, and advanced visual sensors, have greatly enhanced the perception capabilities of robots in unknown environments. These sensors provide rich data for terrain mapping, obstacle detection, and 3D modeling, enabling robots to navigate safely and adapt to dynamic changes in the environment. Additionally, robust perception algorithms have emerged to address challenges like lighting variations and unexpected obstacles, ensuring reliable and real-time decision-making during exploration missions.
+### Dynamic and Changing Environments:
+Some modern frontier exploration algorithms [ADD REFERENCE] can adapt to dynamic changes and are not limited to static situations. Sensor-equipped agents continuously update their maps and exploration paths to account for moving objects, obstacles, and general dynamic environmental circumstances. This adaptability ensures that the goal of optimal environment exploration remains effective in scenarios where the environment is not static.
 
 ### Real-World Applications: 
-Frontier exploration has transitioned from theoretical research to practical applications. Robots equipped with frontier exploration capabilities are increasingly deployed in real-world scenarios such as search and rescue operations, precision agriculture, and infrastructure inspection. These applications demonstrate the field's impact on addressing critical challenges and improving decision support in domains where efficient exploration and mapping are essential.
+Frontier exploration has transitioned from theoretical and simulation-based research to practical applications. Physical robotic agents equipped with frontier exploration capabilities are increasingly deployed in real-world scenarios such as search and rescue operations, precision agriculture, and infrastructure inspection. These applications demonstrate the field's impact on addressing critical challenges and improving decision support in domains where efficient exploration and mapping are essential [ADD REFERENCE].
 
 ### Scalability and Adaptability: 
-Frontier exploration approaches have showcased scalability and adaptability to various environmental conditions and terrains. Robots equipped with frontier exploration algorithms can efficiently explore both small indoor environments and large-scale outdoor areas, making them versatile tools for a wide range of applications. Researchers continue to refine these methods to address increasingly complex scenarios, enabling robots to explore with greater autonomy and reliability.
+Multi-agent frontier exploration approaches [ADD REFERENCE] have showcased scalability for the use of unknown environmental mapping in a teamed/swarmed environment. These approaches also demonstrate robust and effective frontier exploration and mapping in  both small indoor (complex) environments and large-scale outdoor areas, making them versatile tools for a wide range of applications. 
 
 
 ## Relationship to Decision-Making in Robotics
+Frontier exploration in robotics is intimately tied to decision-making processes, frequently utilizing complex methods like Reinforcement Learning (RL) and Markov Decision Processes (MDPs) to maximize robot actions in uncharted areas. Frontier exploration scenarios are particularly suited for MDPs because they offer a formal framework for modelling decision-making issues under uncertainty. The agent must autonomously decide an optimal policy on its exploration journey while accounting for a number of goals, such as information gathering and coverage. Every action, such as moving locations or gaining sensor information, has a corresponding benefit or cost, and the agent seeks to identify an action that maximizes its anticipated cumulative benefit over time.
 
-Frontier exploration in robotics is closely related to decision-making processes, often leveraging sophisticated techniques like Markov Decision Processes (MDPs) and Reinforcement Learning (RL) to optimize robot actions in unknown environments. MDPs provide a formal framework for modelling decision-making problems under uncertainty, making them well-suited for frontier exploration scenarios. In this context, the robot faces a series of decisions about where to explore next while maximizing certain objectives, such as information gain or coverage. Each action, such as moving to a new location or adjusting sensors, is associated with a reward or cost, and the robot aims to find a policy that maximizes the expected cumulative reward over time.
+Reinforcement learning is a powerful tool employed in frontier exploration to take optimal actions in areas such as obstacle avoidance and path planning. For example, as observed in [ADD REFERENCE] an agent employs reinforcement learning algorithms to optimal paths to avoid obstacles within the environment whilst effectively exploring frontiers. These algorithms use a reward-based system wherein desirable actions, like successfully avoiding obstacles, are rewarded positively, while undesirable outcomes, like collisions, are penalized. Agents can modify their decision-making process and develop obstacle-avoidance policies by learning over time from these rewards. This allows agents efficiently explore unexplored territories while navigating safely around obstacles within the terrain and making sensible choices to prevent collisions [ADD REFERENCE].
 
-Reinforcement Learning is a powerful tool within frontier exploration, allowing robots to learn optimal decision policies through interactions with the environment. For example, consider an autonomous rover tasked with exploring a Martian landscape. By employing RL algorithms, the rover can learn how to choose actions (e.g., moving to a particular area) that lead to discovering interesting geological features or potential signs of past life. Through a trial-and-error process, the robot learns which regions are worth exploring, balancing between exploring new frontiers and exploiting existing knowledge.
+Deep Q-Networks (DQNs), have also been applied to frontier exploration tasks [ADD REFERENCE]. 
 
-One example is Deep Q-Networks (DQNs), which have been applied to robotic exploration tasks. In these scenarios, the robot collects data about its environment and uses it to update its knowledge about the state of the world. This process helps the robot make more informed decisions about where to explore next. In a frontier exploration context, RL algorithms can help robots adapt to changing environments, optimize resource allocation (e.g., energy consumption), and navigate complex, dynamic spaces efficiently.
-
-Space Exploration with Rovers: When rovers are deployed on planetary missions, such as NASA's Mars rovers like Curiosity and Perseverance, they rely on frontier exploration techniques for decision-making. These rovers explore the Martian surface, seeking to gather scientific data and images of interesting geological features. Markov Decision Processes (MDPs) play a crucial role in planning the rover's movements. States include information about the rover's current location, power levels, instrument statuses, and environmental conditions. Actions involve selecting directions to drive and instruments to use. Reinforcement Learning (RL) can help rovers adapt to unexpected discoveries. For instance, if the rover encounters a potentially habitable environment or discovers unexpected minerals, it can receive rewards for further investigation. Over time, RL algorithms enable the rover to learn to prioritize regions with higher scientific value.
-
-Search and Rescue Drones: In search and rescue missions, drones are deployed to locate and assist people in disaster-stricken or remote areas. These drones often employ frontier exploration strategies to efficiently cover large and uncertain environments. MDPs guide decision-making by considering factors such as drone battery levels, communication signal strength, and terrain complexity. Actions might involve changing altitude, speed, or search patterns. RL techniques can improve the drones' performance over time. For instance, if a drone finds a survivor, it can receive a reward for successfully identifying and reporting the location. RL allows the drone to learn optimal search patterns, prioritize areas with higher chances of finding survivors, and adapt to changing conditions like wind or obstacles.
-
+A real world example of decision making being employed by agents through frontier exploration is observed [ADD REFERENCE TO PROJECT]
 
 ## Variants
 
