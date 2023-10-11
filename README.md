@@ -164,10 +164,8 @@ How can agents operate in unpredictable situations with noisy sensor data? It i
 3. **Decision-Making and Planning:**
 #### Optimal Path Planning: 
 What path-planning algorithms are most effective and efficient for guiding agents through challenging environments? How do these algorithms take into account practical limits like energy restrictions or security concerns?
-
 #### Human-Robot Collaboration: 
 How can agents effectively cooperate in a human-machine-teamed environment or support human operators in situations involving frontier exploration? This covers communication and joint decision-making techniques.
-
 
 4. **Mapping and Localization:**
 #### Long-Term Mapping:
