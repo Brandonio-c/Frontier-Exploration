@@ -211,10 +211,9 @@ For more in-depth information on frontier exploration and related topics, please
 
 13. D. C. Schedl et al. ,(2021), An autonomous drone for search and rescue in forests using airborne optical sectioning.Sci. Robot.6,eabg1188, doi: 10.1126/scirobotics.abg1188
 
-14. Fasiolo, D., Scalera, L., Maset, E., Gasparetto, A., (2023),  Towards autonomous mapping in agriculture: A review of supportive technologies for ground robotics, Robotics and Autonomous Systems, Volume 169, 2023,
-104514, doi:  10.1016/j.robot.2023.104514.
+14. Fasiolo, D., Scalera, L., Maset, E., Gasparetto, A., (2023),  Towards autonomous mapping in agriculture: A review of supportive technologies for ground robotics, Robotics and Autonomous Systems, Volume 169, doi:  10.1016/j.robot.2023.104514.
 
-15 . C. Papachristos, S. Khattak, F. Mascarich and K. Alexis, "Autonomous Navigation and Mapping in Underground Mines Using Aerial Robots," 2019 IEEE Aerospace Conference, Big Sky, MT, USA, 2019, pp. 1-8, doi: 10.1109/AERO.2019.8741532.
+15. C. Papachristos, S. Khattak, F. Mascarich and K. Alexis, "Autonomous Navigation and Mapping in Underground Mines Using Aerial Robots," 2019 IEEE Aerospace Conference, Big Sky, MT, USA, 2019, pp. 1-8, doi: 10.1109/AERO.2019.8741532.
 
 
     
